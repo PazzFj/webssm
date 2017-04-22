@@ -23,7 +23,7 @@ public class PersonController {
     @ResponseBody
     @RequestMapping("/getPersons")
     public List<Person> getPersons(){
-        System.out.println("_______");
+        System.out.println("_____yttyt__");
         List<Person> personList = new ArrayList<Person>();
         personList = personDao.getPersons();
         personList.add(new Person(1, "zhangs", 21));
