@@ -40,7 +40,6 @@
 	    <version>1.16.6</version>
 	    <scope>provided</scope>
 	</dependency>
-	
 
     <!-- 添加jstl依赖 -->
     <dependency>
@@ -101,7 +100,6 @@
       <artifactId>spring-aop</artifactId>
       <version>${spring.version}</version>
     </dependency>
-
     <dependency>
       <groupId>org.springframework</groupId>
       <artifactId>spring-test</artifactId>
