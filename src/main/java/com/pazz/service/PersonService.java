@@ -7,6 +7,7 @@ import org.springframework.stereotype.Service;
 
 import com.pazz.dao.IPersonDao;
 import com.pazz.entity.Person;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * Created by Administrator on 2017-4-8.
@@ -20,6 +21,11 @@ public class PersonService {
 	public  List<Person> getPersons(){
 		 List<Person> persons = personDao.getPersons();
 		return persons;
+	}
+
+	@Transactional
+	public void updatePerson(String name){
+		personDao.updatePerson(name);
 	}
 
 }
