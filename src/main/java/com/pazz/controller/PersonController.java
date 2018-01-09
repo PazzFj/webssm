@@ -21,4 +21,11 @@ public class PersonController {
         return personList;
     }
 
+    @ResponseBody
+    @RequestMapping("/updatePerson")
+    public String updatePerson(@RequestParam("name") String name){
+        personService.updatePerson(name);
+        return "success";
+    }
+
 }

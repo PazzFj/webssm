@@ -9,8 +9,8 @@
         select * from person
     </select>
 
-    <update id="updatePerson" >
-        UPDATE PERSON SET PNAME = #{NAME } WHERE PID = 1
+    <update id="updatePerson" parameterType="string">
+        UPDATE PERSON SET PNAME = #{name } WHERE PID = 1
     </update>
 
 </mapper>
