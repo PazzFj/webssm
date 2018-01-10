@@ -1,19 +1,19 @@
 package com.test;
 
-import org.springframework.context.ApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
+import com.pazz.entity.Person;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
+import org.springframework.core.io.ClassPathResource;
 
 /**
  * Hello world!
  *
  */
 public class ApplicationTest {
-    public static void main( String[] args ) {
+    public static void main( String[] args ) throws Exception {
 
-//        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mvc.xml");
-//        MappingJackson2HttpMessageConverter bean = (MappingJackson2HttpMessageConverter) ac.getBean("mappingJacksonHttpMessageConverter");
-
-        System.out.println( "Hello World!");
+        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));
+        Person person = (Person) bf.getBean("nameBean");
+        System.out.println(person);
     }
 }
