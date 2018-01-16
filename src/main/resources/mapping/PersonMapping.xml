@@ -10,7 +10,7 @@
     </select>
 
     <update id="updatePerson" parameterType="string">
-        UPDATE PERSON SET PNAME = #{name } WHERE PID = 1
+        UPDATE person SET pname = #{name } WHERE pid = 1
     </update>
 
 </mapper>
