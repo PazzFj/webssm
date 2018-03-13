@@ -28,4 +28,13 @@ public class PersonService {
 		personDao.updatePerson(name);
 	}
 
+
+	public void myMethod(){
+
+	}
+
+	public void getUser(){
+
+	}
+
 }
