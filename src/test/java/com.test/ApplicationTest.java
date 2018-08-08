@@ -1,14 +1,14 @@
 package com.test;
 
-import com.pazz.entity.Person;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.support.DefaultListableBeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanDefinitionReader;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
+import com.pazz.bean.AspectJTest;
+import com.pazz.bean.BeanA;
+import com.pazz.bean.Car;
+import com.pazz.bean.CarFactoryBean;
+import com.pazz.bean.Test;
+import com.pazz.bean.TestBean;
+import com.pazz.bean.UserBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
-import org.springframework.util.StringUtils;
 
 /**
  * Hello world!
@@ -16,33 +16,28 @@ import org.springframework.util.StringUtils;
  */
 public class ApplicationTest {
     public static void main( String[] args ) throws Exception {
-//        String str = "abcde";
-//        String str2 = "   ";
-//        System.out.println(StringUtils.hasText(str2));
-//        str = StringUtils.replace(str, "b", "a");
-//        System.out.println(str);
-//        int index = str.indexOf("c", 4);
-//        System.out.println(index);
-
-//        Assert.hasText(str, "must not is null !");
-//        System.out.println(str.length());
-
-        @SuppressWarnings("deprecation")
-        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));
-        Person person = (Person) bf.getBean("nameBean");
-        System.out.println(person);
+        //applicationContext.xml
+        //spring-mvc.xml
+        //aspectTest.xml
+        ApplicationContext ac = new ClassPathXmlApplicationContext("aspectTest.xml");
+        TestBean testBean = ac.getBean("testBean", TestBean.class);
+        testBean.test();
 
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mvc.xml");
-        Person nameBean = (Person) ac.getBean("nameBean");
-        System.out.println(nameBean);
+//        UserBean userBean = (UserBean) ac.getBean("userBean");
+//        userBean.showMe();
+//        CarFactoryBean carFactoryBean = (CarFactoryBean) ac.getBean("&car");
+//        Car car = carFactoryBean.getObject();
+//        System.out.println(car);
+//        ((ClassPathXmlApplicationContext) ac).setAllowCircularReferences(false);
+//        BeanA beanA = (BeanA) ac.getBean("beanA");
+//        System.out.println(beanA.getBeanB());
 
 
-//        DefaultListableBeanFactory beanFactory = new DefaultListableBeanFactory();
-//        XmlBeanDefinitionReader reader = new XmlBeanDefinitionReader(beanFactory);
-//        reader.loadBeanDefinitions(new ClassPathResource("spring-mvc.xml"));
-//        Person person2 = (Person) beanFactory.getBean("nameBean");
-//        System.out.println(person2);
+//        @SuppressWarnings("deprecation")
+//        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));
+//        Person person = (Person) bf.getBean("personName");
+//        System.out.println(person);
 
     }
 }

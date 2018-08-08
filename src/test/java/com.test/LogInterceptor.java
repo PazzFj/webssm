@@ -2,6 +2,7 @@ package com.test;
 
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.ProceedingJoinPoint;
+import org.aspectj.lang.annotation.After;
 import org.aspectj.lang.annotation.AfterReturning;
 import org.aspectj.lang.annotation.AfterThrowing;
 import org.aspectj.lang.annotation.Around;
@@ -9,7 +10,6 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
 import org.aspectj.lang.reflect.SourceLocation;
-import org.junit.After;
 import org.springframework.stereotype.Component;
 
 @Aspect
@@ -26,7 +26,7 @@ public class LogInterceptor {
         System.out.println("method start");
     }
 
-//    @After("myMethod()")
+    @After("myMethod()")
     public void after() {
         System.out.println("method after");
     }
@@ -35,7 +35,6 @@ public class LogInterceptor {
         System.out.println("method AfterReturning");
     }
     @AfterThrowing("execution(public * com.pazz.service..*.*(..))")
-//  @Around("execution(public * net.aazj.mapper..*.*(..))")
     public void AfterThrowing() {
         System.out.println("method AfterThrowing");
     }

@@ -40,18 +40,6 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
-    <bean id="idBean" name="nameBean" class="com.pazz.entity.Person">
-        <property  name="pid" value="1"></property>
-        <property name="pname" value="pengjian"></property>
-        <property name="page" value="25"></property>
-    </bean>
-
-    <bean id="personId" name="personName" class="com.pazz.entity.Person">
-        <meta key="pid" value="3"></meta>
-        <meta key="pname" value="zhangsan"></meta>
-        <meta key="page" value="33"></meta>
-    </bean>
-
     <!-- 文件上传配置 -->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <!-- 默认编码 -->
