@@ -1,5 +1,6 @@
 package com.pazz.aop;
 
+import org.springframework.aop.framework.AopProxy;
 import org.springframework.cglib.proxy.InvocationHandler;
 import org.springframework.cglib.proxy.Proxy;
 
@@ -10,7 +11,7 @@ import java.lang.reflect.Method;
  * @date: 2018/8/8 17:43
  * @description:
  */
-public class MyInvocationHandler implements InvocationHandler {
+public class MyInvocationHandler implements InvocationHandler, AopProxy {
 
     private Object target;
 
@@ -28,6 +29,10 @@ public class MyInvocationHandler implements InvocationHandler {
 
     public Object getProxy(){
         return Proxy.newProxyInstance(Thread.currentThread().getContextClassLoader(), target.getClass().getInterfaces(), this);
+    }
+
+    public Object getProxy(ClassLoader classLoader) {
+        return Proxy.newProxyInstance(classLoader, target.getClass().getInterfaces(), this);
     }
 
 }
