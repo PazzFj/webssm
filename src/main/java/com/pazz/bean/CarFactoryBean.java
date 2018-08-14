@@ -1,5 +1,6 @@
 package com.pazz.bean;
 
+import lombok.Data;
 import org.springframework.beans.factory.FactoryBean;
 
 /**
@@ -7,6 +8,7 @@ import org.springframework.beans.factory.FactoryBean;
  * @date: 2018/8/6 14:23
  * @description:
  */
+@Data
 public class CarFactoryBean implements FactoryBean<Car> {
 
     private String carInfo;
@@ -26,11 +28,4 @@ public class CarFactoryBean implements FactoryBean<Car> {
         return false;
     }
 
-    public String getCarInfo() {
-        return carInfo;
-    }
-
-    public void setCarInfo(String carInfo) {
-        this.carInfo = carInfo;
-    }
 }

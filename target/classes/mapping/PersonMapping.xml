@@ -7,6 +7,14 @@
 
     <select id="getPersons" resultType="com.pazz.entity.Person">
         select * from person
+        <where>
+            <if test="null != name  and '' != name ">
+                and pname like #{name}
+            </if>
+            <if test="null != _parameter.get('param2') ">
+                and page = #{param2}
+            </if>
+        </where>
     </select>
 
     <update id="updatePerson" parameterType="string">

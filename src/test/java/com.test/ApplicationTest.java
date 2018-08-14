@@ -8,6 +8,11 @@ import com.pazz.bean.Test;
 import com.pazz.bean.TestBean;
 import com.pazz.bean.UserBean;
 import com.pazz.entity.Person;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
+import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
+import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.jdbc.core.JdbcTemplate;
@@ -31,6 +36,8 @@ public class ApplicationTest {
         //spring-mybatis.xml
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mybatis.xml");
         DataSource dataSource = ac.getBean("dataSource", DataSource.class);
+        DefaultSqlSessionFactory defaultSqlSessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
+//        SqlSessionFactoryBean sqlSessionFactory = ac.getBean("sqlSessionFactory", SqlSessionFactoryBean.class);
 
         // Java JDBC
         /**
@@ -44,33 +51,16 @@ public class ApplicationTest {
         // Spring JDBC ===> JdbcTemplate
 
         JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
-        List query = jdbcTemplate.query("select * from person", new RowMapper<Person>(){
-            public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
-                Person person = new Person();
-                person.setPid(rs.getInt(1));
-                person.setPname(rs.getString(2));
-                person.setPage(rs.getInt(3));
-                return person;
-            }
-        });
-        System.out.println(query);
-
-
-
-
-
-
-
-
-//        UserBean userBean = (UserBean) ac.getBean("userBean");
-//        userBean.showMe();
-//        CarFactoryBean carFactoryBean = (CarFactoryBean) ac.getBean("&car");
-//        Car car = carFactoryBean.getObject();
-//        System.out.println(car);
-//        ((ClassPathXmlApplicationContext) ac).setAllowCircularReferences(false);
-//        BeanA beanA = (BeanA) ac.getBean("beanA");
-//        System.out.println(beanA.getBeanB());
-
+//        List query = jdbcTemplate.query("select * from person", new RowMapper<Person>(){
+//            public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
+//                Person person = new Person();
+//                person.setPid(rs.getInt(1));
+//                person.setPname(rs.getString(2));
+//                person.setPage(rs.getInt(3));
+//                return person;
+//            }
+//        });
+//        System.out.println(query);
 
 //        @SuppressWarnings("deprecation")
 //        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));

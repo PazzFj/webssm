@@ -22,8 +22,11 @@ public class PersonService {
 	@Autowired
 	private IPersonDao personDao;
 
-	public  List<Person> getPersons(){
-		List<Person> persons = personDao.getPersons();
+	public  List<Person> getPersons(String name, Integer age){
+		if(null != name){
+			name = "%"+name+"%";
+		}
+		List<Person> persons = personDao.getPersons(name, age);
 		log.info("==================> " + persons);
 		return persons;
 	}
