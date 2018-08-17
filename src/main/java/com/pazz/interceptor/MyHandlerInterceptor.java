@@ -1,4 +1,4 @@
-package com.pazz.controller;
+package com.pazz.interceptor;
 
 import org.springframework.stereotype.Component;
 import org.springframework.web.servlet.HandlerInterceptor;
