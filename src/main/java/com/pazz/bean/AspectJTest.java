@@ -15,31 +15,31 @@ import org.aspectj.lang.annotation.Pointcut;
 @Aspect
 public class AspectJTest {
 
-    @Pointcut("execution(* com.pazz..*.test(..))")
-    public void test(){
+    @Pointcut("execution(* com.pazz..*.getPersons(..))")
+    public void getPersons(){
 
     }
 
-    @Before("test()")
+    @Before("getPersons()")
     public void beforeTest(){
-        System.out.println("beforeTest");
+        System.out.println("beforeTest getPersons");
     }
 
-    @After("test()")
+    @After("getPersons()")
     public void afterTest(){
-        System.out.println("afterTest");
+        System.out.println("afterTest getPersons");
     }
 
-    @Around("test()")
+    @Around("getPersons()")
     public Object aroundTest(ProceedingJoinPoint point){
-        System.out.println("before1");
+        System.out.println("before1 getPersons");
         Object o = null;
         try{
             o = point.proceed();
         }catch (Throwable e){
             e.printStackTrace();
         }
-        System.out.println("after1");
+        System.out.println("after1 getPersons");
         return o;
     }
 
