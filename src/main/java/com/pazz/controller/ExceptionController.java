@@ -1,5 +1,6 @@
 package com.pazz.controller;
 
+import com.pazz.response.Response;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -40,14 +41,18 @@ public class ExceptionController {
 
     @ResponseBody
     @ExceptionHandler(RuntimeException.class)//可以直接写@ExceptionHandler,不指明异常类，会自动映射
-    public String customGenericExceptionHandler(RuntimeException exception) { //还可以声明接收其他任意参数
-        return "runtimeException";
+    public Response customGenericExceptionHandler(RuntimeException exception) { //还可以声明接收其他任意参数
+        Response response = new Response();
+        response.setResult(exception);
+        return response;
     }
 
     @ResponseBody
     @ExceptionHandler(IOException.class)//可以直接写@ExceptionHandler,不指明异常类，会自动映射
-    public String allExceptionHandler(IOException exception) { //还可以声明接收其他任意参数
-        return "ioException";
+    public Response allExceptionHandler(IOException exception) { //还可以声明接收其他任意参数
+        Response response = new Response();
+        response.setResult(exception);
+        return response;
     }
 
 }

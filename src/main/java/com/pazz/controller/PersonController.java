@@ -1,6 +1,7 @@
 package com.pazz.controller;
 
 import com.pazz.entity.Person;
+import com.pazz.response.PageResponse;
 import com.pazz.service.PersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,9 +20,12 @@ public class PersonController {
     @GET
     @ResponseBody
     @RequestMapping("/getPersons")
-    public List<Person> getPersons(String name, Integer age){
+    public PageResponse getPersons(String name, Integer age){
+        PageResponse response = new PageResponse();
         List<Person> personList = personService.getPersons(name, age);
-        return personList;
+        response.setResult(personList);
+        response.setTotalCount(personList.size());
+        return response;
     }
 
     @POST
