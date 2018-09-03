@@ -36,21 +36,19 @@ public class ApplicationTest {
         //spring-mybatis.xml
         ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mybatis.xml");
         DataSource dataSource = ac.getBean("dataSource", DataSource.class);
-        DefaultSqlSessionFactory defaultSqlSessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
-//        SqlSessionFactoryBean sqlSessionFactory = ac.getBean("sqlSessionFactory", SqlSessionFactoryBean.class);
+        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
+        System.out.println(sessionFactory);
 
-        // Java JDBC
-        /**
-        Connection connection = dataSource.getConnection();
-        PreparedStatement preparedStatement = connection.prepareStatement("select * from person");
-        ResultSet resultSet = preparedStatement.executeQuery();
-        while (resultSet.next()) {
-            System.out.println(resultSet.getString(2));
-        }
-        */
-        // Spring JDBC ===> JdbcTemplate
-
-        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
+//        // Java JDBC
+//        Connection connection = dataSource.getConnection();
+//        PreparedStatement preparedStatement = connection.prepareStatement("select * from person");
+//        ResultSet resultSet = preparedStatement.executeQuery();
+//        while (resultSet.next()) {
+//            System.out.println(resultSet.getString(2));
+//        }
+//
+//        // Spring JDBC ===> JdbcTemplate
+//        JdbcTemplate jdbcTemplate = new JdbcTemplate(dataSource);
 //        List query = jdbcTemplate.query("select * from person", new RowMapper<Person>(){
 //            public Person mapRow(ResultSet rs, int rowNum) throws SQLException {
 //                Person person = new Person();
@@ -61,6 +59,7 @@ public class ApplicationTest {
 //            }
 //        });
 //        System.out.println(query);
+
 
 //        @SuppressWarnings("deprecation")
 //        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));

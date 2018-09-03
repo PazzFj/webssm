@@ -16,7 +16,6 @@ public class MyInvocationHandler implements InvocationHandler, AopProxy {
     private Object target;
 
     public MyInvocationHandler(Object target) {
-        super();
         this.target = target;
     }
 
