@@ -27,7 +27,7 @@ public class PersonService {
 			name = "%"+name+"%";
 		}
 		List<Person> persons = personDao.getPersons(name, age);
-		log.info("==================> " + persons);
+		log.info("========>> persons: " + persons);
 		return persons;
 	}
 

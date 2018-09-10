@@ -10,7 +10,7 @@ import org.aspectj.lang.annotation.Pointcut;
 /**
  * @author: Peng Jian
  * @date: 2018/8/7 15:34
- * @description:
+ * @description: Aspect 切面
  */
 @Aspect
 public class AspectJTest {
@@ -32,14 +32,14 @@ public class AspectJTest {
 
     @Around("getPersons()")
     public Object aroundTest(ProceedingJoinPoint point){
-        System.out.println("before1 getPersons");
+        System.out.println("before");
         Object o = null;
         try{
             o = point.proceed();
         }catch (Throwable e){
             e.printStackTrace();
         }
-        System.out.println("after1 getPersons");
+        System.out.println("after");
         return o;
     }
 
