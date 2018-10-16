@@ -12,8 +12,6 @@
 
     <aop:aspectj-autoproxy proxy-target-class="false" />
 
-    <bean id="testBean" class="com.pazz.bean.TestBean"></bean>
-
     <bean class="com.pazz.bean.AspectJTest"></bean>
 
 

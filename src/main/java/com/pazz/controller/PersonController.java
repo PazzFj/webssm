@@ -24,7 +24,7 @@ public class PersonController {
     @GET
     @ResponseBody
     @RequestMapping("/getPersons")
-    public PageResponse getPersons(String name, Integer age){
+    public PageResponse queryList(String name, Integer age){
         PageResponse response = new PageResponse();
         List<Person> personList = personService.getPersons(name, age);
         response.setResult(personList);

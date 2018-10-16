@@ -1,29 +1,10 @@
 package com.test;
 
-import com.pazz.bean.AspectJTest;
-import com.pazz.bean.BeanA;
-import com.pazz.bean.Car;
-import com.pazz.bean.CarFactoryBean;
-import com.pazz.bean.Test;
-import com.pazz.bean.TestBean;
-import com.pazz.bean.UserBean;
-import com.pazz.entity.Person;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.apache.ibatis.session.defaults.DefaultSqlSessionFactory;
-import org.mybatis.spring.SqlSessionFactoryBean;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.jdbc.core.JdbcTemplate;
-import org.springframework.jdbc.core.RowMapper;
 
 import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.List;
 
 /**
  * Hello world!
