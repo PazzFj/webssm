@@ -12,7 +12,6 @@ import org.springframework.stereotype.Component;
  * @description: 配置类
  */
 @EnableAspectJAutoProxy
-@Component
 @Configuration
 public class AspectJConfig {
 
