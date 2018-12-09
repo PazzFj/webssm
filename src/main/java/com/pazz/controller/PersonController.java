@@ -19,20 +19,18 @@ public class PersonController {
     private TestService testService;
 
     @ResponseBody
-    @GetMapping("/getPersons")
+    @RequestMapping("/list")
     public List<Person> queryList(String name, Integer age) {
         List<Person> personList = personService.getPersons(name, age);
         return personList;
     }
 
-    @ResponseBody
-    @PostMapping("/updatePerson")
+    @GetMapping("/updatePerson")
     public String updatePerson(@RequestParam("name") String name) {
         personService.updatePerson(name);
         return "success";
     }
 
-    @ResponseBody
     @GetMapping("/getTests")
     public List<Test> getTests() {
         List<Test> testList = testService.getTests();
