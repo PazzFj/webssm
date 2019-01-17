@@ -5,6 +5,11 @@
 
 <mapper namespace="com.pazz.dao.IPersonDao">
 
+    <resultMap id="person" type="com.pazz.entity.Person">
+        <id column="pid" property="pid" jdbcType="VARCHAR"></id>
+        <result column="pname" property="pname"></result>
+    </resultMap>
+
     <select id="getPersons" resultType="com.pazz.entity.Person">
         select * from person
         <where>

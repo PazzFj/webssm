@@ -1,12 +1,15 @@
 package com.test;
 
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+
 /**
  * Hello world!
  */
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
         //spring-mvc.xml    spring-mybatis.xml
-//        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mybatis.xml");
 //        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
 //        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
 //        System.out.println(sessionFactory);
