@@ -1,7 +1,11 @@
 package com.test;
 
+import com.pazz.entity.Person;
+import org.springframework.beans.factory.BeanFactory;
+import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.core.io.ClassPathResource;
 
 /**
  * Hello world!
@@ -19,9 +23,9 @@ public class ApplicationTest {
 //        System.out.println(p);
 
 
-//        @SuppressWarnings("deprecation")
-//        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));
-//        Person person = (Person) bf.getBean("personName");
+        @SuppressWarnings("deprecation")
+        BeanFactory bf = new XmlBeanFactory(new ClassPathResource("spring-mvc.xml"));
+        Person person = (Person) bf.getBean("personName");
 //        System.out.println(person);
     }
 }

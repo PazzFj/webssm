@@ -1,0 +1,8 @@
+com\pazz\entity\Test.class
+com\pazz\controller\PersonController.class
+com\pazz\controller\TestController.class
+com\pazz\dao\ITestDao.class
+com\pazz\dao\IPersonDao.class
+com\pazz\service\PersonService.class
+com\pazz\service\TestService.class
+com\pazz\entity\Person.class
