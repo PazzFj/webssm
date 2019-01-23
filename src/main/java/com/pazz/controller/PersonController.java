@@ -19,7 +19,7 @@ public class PersonController {
     private TestService testService;
 
     @ResponseBody
-    @RequestMapping("/list")
+    @GetMapping("/list")
     public List<Person> queryList(String name, Integer age) {
         List<Person> personList = personService.getPersons(name, age);
         return personList;

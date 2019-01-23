@@ -2,6 +2,7 @@ package com.pazz.service;
 
 import java.util.List;
 
+import com.pazz.application.TestApplicationContext;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +23,11 @@ public class PersonService {
 	@Autowired
 	private IPersonDao personDao;
 
+	@Autowired
+	TestApplicationContext context;
+
 	public  List<Person> getPersons(String name, Integer age){
+		System.out.println(context);
 		if(null != name){
 			name = "%"+name+"%";
 		}

@@ -2,7 +2,10 @@ package com.pazz.entity;
 
 import lombok.Data;
 
+import javax.persistence.Table;
+
 @Data
+@Table(name = "person")
 public class Person {
 
     private int pid;
