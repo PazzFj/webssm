@@ -1,11 +1,9 @@
 package com.test;
 
-import com.pazz.entity.Person;
-import org.springframework.beans.factory.BeanFactory;
-import org.springframework.beans.factory.xml.XmlBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-import org.springframework.core.io.ClassPathResource;
+
+import javax.sql.DataSource;
 
 /**
  * Hello world!
@@ -13,10 +11,9 @@ import org.springframework.core.io.ClassPathResource;
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
         //spring-mvc.xml    spring-mybatis.xml
-        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mvc.xml");
-//        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mybatis.xml");
+        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
 //        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
-//        System.out.println(sessionFactory);
 
 //        ApplicationContext ac = new AnnotationConfigApplicationContext(TestConfiguration.class);
 //        Person p = ac.getBean(Person.class);
