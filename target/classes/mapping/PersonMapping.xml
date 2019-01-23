@@ -6,24 +6,27 @@
 <mapper namespace="com.pazz.dao.IPersonDao">
 
     <resultMap id="person" type="com.pazz.entity.Person">
-        <id column="pid" property="pid" jdbcType="VARCHAR"></id>
-        <result column="pname" property="pname"></result>
+        <id column="pid" property="pid" jdbcType="INTEGER"></id>
+        <result column="pname" property="pname" jdbcType="VARCHAR"></result>
+        <result column="page" property="page" jdbcType="INTEGER"></result>
     </resultMap>
 
+    <!-- concat('%', #{name}, '%') -->
     <select id="getPersons" resultType="com.pazz.entity.Person">
         select * from person
         <where>
-            <if test="null != name  and '' != name ">
+            <if test="null != name and '' != name">
+                <bind name="name" value="'%' + name + '%'"/>
                 and pname like #{name}
             </if>
-            <if test="null != _parameter.get('param2') ">
-                and page = #{param2}
+            <if test="0 != page">
+                and page = #{page}
             </if>
         </where>
     </select>
 
-    <update id="updatePerson" parameterType="string">
-        UPDATE person SET pname = #{name } WHERE pid = 1
+    <update id="updatePerson">
+        UPDATE person SET pname = #{name} WHERE pid = #{pid}
     </update>
 
 </mapper>

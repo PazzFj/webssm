@@ -1,3 +1,4 @@
+com\pazz\entity\UserEntity.class
 com\pazz\entity\Test.class
 com\pazz\controller\PersonController.class
 com\pazz\controller\TestController.class
