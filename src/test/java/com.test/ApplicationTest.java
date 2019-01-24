@@ -11,8 +11,8 @@ import javax.sql.DataSource;
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
         //spring-mvc.xml    spring-mybatis.xml
-        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mybatis.xml");
-        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
+        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mvc.xml");
+//        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
 //        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
 
 //        ApplicationContext ac = new AnnotationConfigApplicationContext(TestConfiguration.class);

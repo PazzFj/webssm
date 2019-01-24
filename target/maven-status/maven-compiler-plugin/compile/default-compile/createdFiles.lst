@@ -1,9 +1,17 @@
+com\pazz\test\TestBeanPostProcessor.class
+com\pazz\test\TestBeanFactoryPostProcessor.class
+com\pazz\test\TestFactoryBean.class
 com\pazz\entity\UserEntity.class
+com\pazz\common\TestApplicationContextAware.class
+com\pazz\test\TestBeanFactoryAware.class
+com\pazz\common\TestDisposableBean.class
 com\pazz\entity\Test.class
 com\pazz\controller\PersonController.class
+com\pazz\test\TestInstantiationAwareBeanPostProcessor.class
 com\pazz\controller\TestController.class
 com\pazz\dao\ITestDao.class
 com\pazz\dao\IPersonDao.class
 com\pazz\service\PersonService.class
 com\pazz\service\TestService.class
 com\pazz\entity\Person.class
+com\pazz\common\TestInitializingBean.class
