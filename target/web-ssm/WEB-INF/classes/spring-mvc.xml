@@ -11,7 +11,9 @@
                         http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
     <!-- 自动扫描  @Controller-->
-    <context:component-scan base-package="com.pazz"/>
+    <context:component-scan base-package="com.pazz.dao"/>
+    <context:component-scan base-package="com.pazz.service"/>
+    <!--<context:component-scan base-package="com.pazz.controller"/>-->
 
     <!--<aop:aspectj-autoproxy />-->
 

@@ -15,7 +15,7 @@ import org.springframework.transaction.annotation.Transactional;
  * Created by Administrator on 2017-4-8.
  */
 @Service
-public class PersonService {
+public class PersonService implements IPersonService {
 
 	private static final Logger log = LoggerFactory.getLogger(PersonService.class);
 

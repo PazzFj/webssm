@@ -1,7 +1,7 @@
 package com.pazz.controller;
 
 import com.pazz.entity.Person;
-import com.pazz.service.PersonService;
+import com.pazz.service.IPersonService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -12,7 +12,7 @@ import java.util.List;
 public class PersonController {
 
     @Autowired
-    private PersonService personService;
+    private IPersonService personService;
 
     @ResponseBody
     @GetMapping("/list")
