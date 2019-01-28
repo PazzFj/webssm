@@ -4,6 +4,7 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.sql.DataSource;
+import java.sql.Connection;
 
 /**
  * Hello world!
@@ -11,7 +12,10 @@ import javax.sql.DataSource;
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
         //spring-mvc.xml    spring-mybatis.xml
-        ApplicationContext ac = new ClassPathXmlApplicationContext("spring-mvc.xml");
+        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
+        Connection connection = dataSource.getConnection();
+        System.out.println(connection.isClosed());
 //        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
 //        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
 

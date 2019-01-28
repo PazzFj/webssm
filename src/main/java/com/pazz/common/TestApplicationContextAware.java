@@ -1,5 +1,6 @@
 package com.pazz.common;
 
+import com.pazz.service.IPersonService;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
@@ -27,7 +28,7 @@ public class TestApplicationContextAware implements ApplicationContextAware {
             ps.execute();
             ps.close();
             conn.close();
-            System.out.println("ApplicationContextAware Test....................");
+            System.out.println("ApplicationContextAware#setApplicationContext()>>>" + applicationContext.getBean("personService", IPersonService.class).getPersons("asdf", 0));
         }catch(Exception e){
             e.fillInStackTrace();
         }

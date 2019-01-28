@@ -1,8 +1,10 @@
-package com.pazz.test;
+package com.pazz.common;
 
+import com.pazz.service.IPersonService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
+import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.stereotype.Component;
 
 /**
@@ -12,11 +14,14 @@ import org.springframework.stereotype.Component;
  * 实现了该接口的类，可以在Bean被创建之前，获取容器中Bean的定义信息，并且可以进行修改。
  * 实现类中的postProcessBeanFactory方法只会被执行一次，且先于BeanPostProcessor接口的方法
  */
-//@Component
+@Component
 public class TestBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
 
+    private DefaultListableBeanFactory beanFactory;
+
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        System.out.println("BeanFactoryPostProcessor Test...");
+        this.beanFactory = (DefaultListableBeanFactory) beanFactory;
+        System.out.println("BeanFactoryPostProcessor ======postProcessBeanFactory()>>>  ");
     }
 
 }

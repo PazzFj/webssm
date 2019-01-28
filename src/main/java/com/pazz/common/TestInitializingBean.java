@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 public class TestInitializingBean implements InitializingBean {
 
     public void afterPropertiesSet() throws Exception {
-        System.out.println("Initializing Bean Test....................");
+        System.out.println("InitializingBean ================= afterPropertiesSet()>>>  generic current bean");
     }
 
 }

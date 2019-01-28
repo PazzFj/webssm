@@ -1,4 +1,4 @@
-package com.pazz.test;
+package com.pazz.common;
 
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
@@ -12,16 +12,16 @@ import org.springframework.stereotype.Component;
  * 分别调用这个类中的postProcessBeforeInitialization方法和postProcessAfterInitialization方法
  * 实现初始化的逻辑控制
  */
-//@Component
+@Component
 public class TestBeanPostProcessor implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("BeanPostProcessor Test Before Initializing..." + beanName);
+        System.out.println("BeanPostProcessor ======Before()>>> beanName: " + beanName);
         return bean;
     }
 
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("BeanPostProcessor Test After Initializing..." + beanName);
+        System.out.println("BeanPostProcessor ======After()>>> beanName: " + beanName);
         return bean;
     }
 }
