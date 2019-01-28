@@ -1,5 +1,6 @@
 package com.pazz.common;
 
+import com.pazz.service.IPersonService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -16,12 +17,17 @@ import org.springframework.stereotype.Component;
 public class TestBeanPostProcessor implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("BeanPostProcessor ======Before()>>> beanName: " + beanName);
+        if(bean instanceof IPersonService){
+            System.out.println(((IPersonService)bean).getPersons("asdf", 0));
+            System.out.println("BeanPostProcessor ======Before()>>> beanName: " + beanName);
+        }
         return bean;
     }
 
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        System.out.println("BeanPostProcessor ======After()>>> beanName: " + beanName);
+        if(bean instanceof IPersonService){
+            System.out.println("BeanPostProcessor ======After()>>> beanName: " + beanName);
+        }
         return bean;
     }
 }
