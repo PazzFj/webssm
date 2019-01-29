@@ -1,10 +1,11 @@
 com\pazz\common\TestBeanPostProcessor.class
-com\pazz\test\TestFactoryBean.class
 com\pazz\common\TestApplicationContextAware.class
-com\pazz\test\TestBeanFactoryAware.class
 com\pazz\common\TestDisposableBean.class
+com\pazz\common\TestFactoryBean.class
+com\pazz\common\TestInstantiationAwareBeanPostProcessor.class
 com\pazz\controller\PersonController.class
-com\pazz\test\TestInstantiationAwareBeanPostProcessor.class
+com\pazz\common\LogInterceptor.class
+com\pazz\common\TestBeanFactoryAware.class
 com\pazz\dao\IPersonDao.class
 com\pazz\service\IPersonService.class
 com\pazz\service\PersonService.class

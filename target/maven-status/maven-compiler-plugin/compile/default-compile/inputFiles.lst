@@ -1,11 +1,12 @@
+D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestInstantiationAwareBeanPostProcessor.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\entity\Person.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestDisposableBean.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestInitializingBean.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\dao\IPersonDao.java
-D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\test\TestBeanFactoryAware.java
-D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\test\TestFactoryBean.java
-D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\test\TestInstantiationAwareBeanPostProcessor.java
+D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestBeanFactoryAware.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestBeanPostProcessor.java
+D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestFactoryBean.java
+D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\LogInterceptor.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\service\PersonService.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\service\IPersonService.java
 D:\repository\pazzfj\web-ssm\src\main\java\com\pazz\common\TestApplicationContextAware.java
