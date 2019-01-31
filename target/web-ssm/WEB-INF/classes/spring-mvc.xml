@@ -13,7 +13,13 @@
     <!-- 自动扫描  @Controller-->
     <context:component-scan base-package="com.pazz" annotation-config="true" use-default-filters="true" />
 
-    <aop:aspectj-autoproxy />
+    <aop:aspectj-autoproxy proxy-target-class="false" expose-proxy="false" />
+
+    <aop:config>
+        <aop:pointcut id="pointcut" expression="execution(public * com.pazz.service..*.getPersons(..))" />
+        <!--<aop:advisor pointcut-ref="pointcut" advice-ref="" />-->
+        <!--<aop:advisor pointcut-ref="pointcut" advice-ref="" />-->
+    </aop:config>
 
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">

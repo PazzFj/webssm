@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
  * 实现初始化的逻辑控制
  */
 @Component
-public class TestBeanPostProcessor implements BeanPostProcessor {
+public class BeanPostProcessorTest implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         if(bean instanceof IPersonService){

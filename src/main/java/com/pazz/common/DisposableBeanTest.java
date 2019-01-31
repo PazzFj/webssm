@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * 同样，在Spring的配置文件中destroy-method配置也完成同样的工作，不过在执行顺序上，接口的方法先于配置。
  */
 @Component
-public class TestDisposableBean implements DisposableBean {
+public class DisposableBeanTest implements DisposableBean {
 
     public void destroy() throws Exception {
         System.out.println("DisposableBean Test....................");
