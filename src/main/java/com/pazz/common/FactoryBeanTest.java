@@ -11,7 +11,7 @@ import org.springframework.stereotype.Component;
  * 实现了FactoryBean接口的类，可以通过实现getObject方法，实现加载我们想要的Bean
  */
 @Component
-public class TestFactoryBean implements FactoryBean<Person> {
+public class FactoryBeanTest implements FactoryBean<Person> {
 
     public Person getObject() throws Exception {
         Person person = new Person();

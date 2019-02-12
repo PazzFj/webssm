@@ -13,7 +13,7 @@ import org.springframework.stereotype.Component;
  * 这两种方式都是用于完成一些初始化工作，所以相应的方法中不要编写一些复杂且执行时间很长的逻辑。
  */
 @Component
-public class TestInitializingBean implements InitializingBean {
+public class InitializingBeanTest implements InitializingBean {
 
     public void afterPropertiesSet() throws Exception {
         System.out.println("InitializingBean ================= afterPropertiesSet()>>>  generic current bean");

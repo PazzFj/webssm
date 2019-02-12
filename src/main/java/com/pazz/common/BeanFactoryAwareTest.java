@@ -3,6 +3,7 @@ package com.pazz.common;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
+import org.springframework.beans.factory.config.BeanPostProcessor;
 import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.context.ApplicationContext;
 import org.springframework.stereotype.Component;
@@ -15,10 +16,13 @@ import org.springframework.stereotype.Component;
  * 时也可以获取这个BeanFactory中加载的其它Bean
  */
 @Component
-public class TestBeanFactoryAware implements BeanFactoryAware {
+public class BeanFactoryAwareTest implements BeanFactoryAware {
 
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("BeanFactoryAware Test..." + ((DefaultListableBeanFactory) beanFactory).getSerializationId());
+        for (BeanPostProcessor beanPostProcessor : ((DefaultListableBeanFactory) beanFactory).getBeanPostProcessors()) {
+            System.out.println("BeanFactoryAware Test..." + beanPostProcessor.getClass().getName());
+        }
+
     }
 
 }

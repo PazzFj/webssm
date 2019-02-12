@@ -11,7 +11,7 @@ public class ApplicationTest {
     public static void main(String[] args) throws Exception {
         //spring-mvc.xml    spring-mybatis.xml
         ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
-        Person bean = ac.getBean("testFactoryBean", Person.class);
+        Person bean = ac.getBean("factoryBeanTest", Person.class);
         System.out.println(bean.toString());
 //        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
 //        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);

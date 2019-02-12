@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * 每个Bean的实例化(即调用构造函数)之前和之后，会分别调用实现了该接口的类中的postProcessBeforeInstantiation和postProcessAfterInstantiation方法
  */
 @Component
-public class TestInstantiationAwareBeanPostProcessor implements InstantiationAwareBeanPostProcessor {
+public class InstantiationAwareBeanPostProcessorTest implements InstantiationAwareBeanPostProcessor {
 
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
 //        System.out.println("=========>>>> InstantiationAwareBeanPostProcessor#postProcessBeforeInstantiation()");

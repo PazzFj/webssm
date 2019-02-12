@@ -15,13 +15,13 @@ import org.springframework.stereotype.Component;
  * 实现类中的postProcessBeanFactory方法只会被执行一次，且先于BeanPostProcessor接口的方法
  */
 @Component
-public class TestBeanFactoryPostProcessor implements BeanFactoryPostProcessor {
+public class BeanFactoryPostProcessorTest implements BeanFactoryPostProcessor {
 
     private DefaultListableBeanFactory beanFactory;
 
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         this.beanFactory = (DefaultListableBeanFactory) beanFactory;
-        System.out.println("BeanFactoryPostProcessor ======postProcessBeanFactory()>>>  ");
+        System.out.println("BeanFactoryPostProcessor ======postProcessBeanFactory()>>>  " + this.beanFactory.getSerializationId());
     }
 
 }
