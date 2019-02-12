@@ -15,6 +15,8 @@
 
     <aop:aspectj-autoproxy proxy-target-class="false" expose-proxy="false" />
 
+    <bean id="logInterceptor" class="com.pazz.common.LogInterceptor"></bean>
+
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">
