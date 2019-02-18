@@ -1,8 +1,11 @@
 package com.test;
 
+import com.pazz.bean.CircularReferencesA;
+import com.pazz.bean.CircularReferencesB;
 import com.pazz.entity.Person;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.util.ObjectUtils;
 
 /**
  * Hello world!
@@ -10,9 +13,14 @@ import org.springframework.context.support.ClassPathXmlApplicationContext;
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
         //spring-mvc.xml    spring-mybatis.xml
-        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
-        Person bean = ac.getBean("factoryBeanTest", Person.class);
-        System.out.println(bean.toString());
+//        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"classpath*:spring-mybatis.xml", "classpath*:spring-mvc.xml"});
+        CircularReferencesA beanAA = ac.getBean("circularReferencesA", CircularReferencesA.class);
+        CircularReferencesB beanBB = ac.getBean("circularReferencesB", CircularReferencesB.class);
+        beanAA.testA();
+        beanBB.testB();
+
+
 //        DataSource dataSource = ac.getBean("dataSource", DataSource.class);
 //        DefaultSqlSessionFactory sessionFactory = ac.getBean("sqlSessionFactory", DefaultSqlSessionFactory.class);
 

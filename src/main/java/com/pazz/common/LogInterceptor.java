@@ -22,9 +22,14 @@ public class LogInterceptor {
 
     }
 
+    @Pointcut("execution(public * com.pazz.service.PersonService.updatePerson(..)) && args(name, pid)")
+    public void myMethod2(String name, int pid){
+
+    }
+
     @Before("myMethod(name, page)")
     public void before(String name, int page) {
-        log.info("==================>>>>>> Before() name: = " + name + "  page: = " + page);
+//        log.info("==================>>>>>> Before() name: = " + name + "  page: = " + page);
     }
 
     @After("myMethod(name, page)")
@@ -46,7 +51,7 @@ public class LogInterceptor {
     public Object Around(ProceedingJoinPoint jp, String name, int page) throws Throwable {
         log.info("==================>>>>>> Around() name: = " + name + "  page: = " + page);
         Object ret = jp.proceed();
-        System.out.println("result:  " + ret);
+        System.out.println("==>> result:  " + ret);
         return ret;
     }
 

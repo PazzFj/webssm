@@ -5,6 +5,7 @@ import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
+import org.springframework.util.ObjectUtils;
 
 import javax.sql.DataSource;
 import java.sql.Connection;
@@ -22,6 +23,7 @@ public class ApplicationContextAwareTest implements ApplicationContextAware {
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         try {
+            System.out.println(ObjectUtils.identityToString(this));
 //            Connection conn = applicationContext.getBean("dataSource", DataSource.class).getConnection();
 //            PreparedStatement ps = conn.prepareStatement("update person set pname = 'asdf' where pid = ?");
 //            ps.setInt(1, 1);
