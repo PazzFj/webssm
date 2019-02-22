@@ -15,9 +15,6 @@
 
     <aop:aspectj-autoproxy proxy-target-class="false" expose-proxy="false" />
 
-    <bean id="circularA" class="com.pazz.bean.CircularReferencesA"></bean>
-    <bean id="circularB" class="com.pazz.bean.CircularReferencesB"></bean>
-
     <!--<aop:config>-->
         <!--<aop:pointcut id="pointcut" expression="execution(public * com.pazz.service..*.getPersons(..))" />-->
         <!--<aop:advisor pointcut-ref="pointcut" advice-ref="" />-->

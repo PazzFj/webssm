@@ -1,7 +1,5 @@
 package com.pazz.bean;
 
-import org.springframework.beans.factory.annotation.Autowired;
-
 /**
  * @author: 彭坚
  * @create: 2019/2/14 16:06
@@ -9,16 +7,27 @@ import org.springframework.beans.factory.annotation.Autowired;
  */
 public class CircularReferencesA {
 
-    @Autowired
     private CircularReferencesB referencesB;
 
-    private String name = "CircularA";
+    private String nameA = "CircularA";
 
-    public void testA(){
-        System.out.println(this.referencesB);
+    public void nameA(){
+        System.out.println(this.nameA);
     }
 
     public CircularReferencesB getReferencesB() {
         return referencesB;
+    }
+
+    public void setReferencesB(CircularReferencesB referencesB) {
+        this.referencesB = referencesB;
+    }
+
+    public String getNameA() {
+        return nameA;
+    }
+
+    public void setNameA(String nameA) {
+        this.nameA = nameA;
     }
 }
