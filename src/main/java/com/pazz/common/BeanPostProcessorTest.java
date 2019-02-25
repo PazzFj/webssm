@@ -17,17 +17,12 @@ import org.springframework.stereotype.Component;
 public class BeanPostProcessorTest implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
-        if(bean instanceof IPersonService){
-            System.out.println(((IPersonService)bean).getPersons("asdf", 0));
-            System.out.println("BeanPostProcessor ======Before()>>> beanName: " + beanName);
-        }
+        System.out.println("BeanPostProcessor: 》》》》》》 " + beanName);
         return bean;
     }
 
     public Object postProcessAfterInitialization(Object bean, String beanName) throws BeansException {
-        if(bean instanceof IPersonService){
-            System.out.println("BeanPostProcessor ======After()>>> beanName: " + beanName);
-        }
+        System.out.println("BeanPostProcessor: 《《《《《《 " + beanName);
         return bean;
     }
 }

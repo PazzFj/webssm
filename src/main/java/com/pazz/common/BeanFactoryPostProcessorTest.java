@@ -21,7 +21,7 @@ public class BeanFactoryPostProcessorTest implements BeanFactoryPostProcessor {
 
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         this.beanFactory = (DefaultListableBeanFactory) beanFactory;
-        System.out.println("BeanFactoryPostProcessor ======postProcessBeanFactory()>>>  " + this.beanFactory.getSerializationId());
+        System.out.println("BeanFactoryPostProcessor: ==>> " + this.beanFactory.getSerializationId());
     }
 
 }

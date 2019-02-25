@@ -14,7 +14,7 @@ import org.springframework.stereotype.Component;
 public class DisposableBeanTest implements DisposableBean {
 
     public void destroy() throws Exception {
-        System.out.println("DisposableBean Test....................");
+        System.out.println("DisposableBean: ==>> ");
     }
 
 }

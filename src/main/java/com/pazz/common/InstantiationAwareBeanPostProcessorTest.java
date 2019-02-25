@@ -15,17 +15,14 @@ import org.springframework.stereotype.Component;
 public class InstantiationAwareBeanPostProcessorTest implements InstantiationAwareBeanPostProcessor {
 
     public Object postProcessBeforeInstantiation(Class<?> beanClass, String beanName) throws BeansException {
-//        System.out.println("=========>>>> InstantiationAwareBeanPostProcessor#postProcessBeforeInstantiation()");
         return null;
     }
 
     public boolean postProcessAfterInstantiation(Object bean, String beanName) throws BeansException {
-//        System.out.println("=========>>>> InstantiationAwareBeanPostProcessor#postProcessAfterInstantiation()");
         return true;
     }
 
     public PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName) throws BeansException {
-//        System.out.println("=====>> InstantiationAwareBeanPostProcessor#postProcessProperties()");
         return pvs;
     }
 

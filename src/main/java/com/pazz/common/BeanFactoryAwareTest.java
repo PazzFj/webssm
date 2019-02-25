@@ -19,10 +19,7 @@ import org.springframework.stereotype.Component;
 public class BeanFactoryAwareTest implements BeanFactoryAware {
 
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        for (BeanPostProcessor beanPostProcessor : ((DefaultListableBeanFactory) beanFactory).getBeanPostProcessors()) {
-            System.out.println("BeanFactoryAware Test..." + beanPostProcessor.getClass().getName());
-        }
-
+        System.out.println("BeanFactoryAware: ==>> " + beanFactory);
     }
 
 }

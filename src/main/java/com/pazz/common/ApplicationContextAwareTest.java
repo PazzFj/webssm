@@ -23,14 +23,7 @@ public class ApplicationContextAwareTest implements ApplicationContextAware {
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         try {
-            System.out.println(ObjectUtils.identityToString(this));
-//            Connection conn = applicationContext.getBean("dataSource", DataSource.class).getConnection();
-//            PreparedStatement ps = conn.prepareStatement("update person set pname = 'asdf' where pid = ?");
-//            ps.setInt(1, 1);
-//            ps.execute();
-//            ps.close();
-//            conn.close();
-//            System.out.println("ApplicationContextAware#setApplicationContext()>>>" + applicationContext.getBean("personService", IPersonService.class).getPersons("asdf", 0));
+            System.out.println("ApplicationContextAware: ==>> " + applicationContext.getId());
         }catch(Exception e){
             e.fillInStackTrace();
         }
