@@ -1,6 +1,7 @@
 package com.pazz.common;
 
 import org.springframework.beans.BeansException;
+import org.springframework.beans.PropertyValue;
 import org.springframework.beans.PropertyValues;
 import org.springframework.beans.factory.config.InstantiationAwareBeanPostProcessor;
 import org.springframework.stereotype.Component;
@@ -23,6 +24,11 @@ public class InstantiationAwareBeanPostProcessorTest implements InstantiationAwa
     }
 
     public PropertyValues postProcessProperties(PropertyValues pvs, Object bean, String beanName) throws BeansException {
+        PropertyValue[] propertyValues = pvs.getPropertyValues();
+        for (int i = 0; i < propertyValues.length; i++) {
+            PropertyValue propertyValue = propertyValues[i];
+            System.out.println("-->PropertyValue: " + propertyValue.getName() + " == " + propertyValue.getValue());
+        }
         return pvs;
     }
 

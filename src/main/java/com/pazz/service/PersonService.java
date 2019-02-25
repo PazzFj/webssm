@@ -10,6 +10,7 @@ import org.springframework.stereotype.Service;
 import com.pazz.dao.IPersonDao;
 import com.pazz.entity.Person;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.util.Assert;
 
 /**
  * Created by Administrator on 2017-4-8.
@@ -29,6 +30,7 @@ public class PersonService implements IPersonService {
 
 	@Transactional
 	public void updatePerson(String name, int pid){
+		Assert.hasText(name, "name is not null!");
 		personDao.updatePerson(name, pid);
 	}
 
