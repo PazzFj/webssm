@@ -12,4 +12,7 @@
         <property name="referencesA" ref="nameA"></property>
     </bean>
 
+    <bean id="factoryBeanTest1" class="com.pazz.common.FactoryBeanTest"></bean>
+    <bean id="factoryBeanTest2" class="com.pazz.common.FactoryBeanTest2"></bean>
+
 </beans>

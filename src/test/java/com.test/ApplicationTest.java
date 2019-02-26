@@ -1,7 +1,9 @@
 package com.test;
 
 import com.pazz.bean.CircularReferencesA;
+import com.pazz.common.FactoryBeanTest;
 import com.pazz.config.AutoConfigurable;
+import com.pazz.entity.Person;
 import com.pazz.service.IPersonService;
 import com.pazz.service.PersonService;
 import org.springframework.beans.factory.BeanFactory;
@@ -37,7 +39,9 @@ public class ApplicationTest {
         DefaultListableBeanFactory defaultBf = new DefaultListableBeanFactory();
         BeanDefinitionReader bdr = new XmlBeanDefinitionReader(defaultBf);
         bdr.loadBeanDefinitions(new ClassPathResource("spring-bean.xml"));
-        CircularReferencesA referencesA = defaultBf.getBean("circularReferencesA", CircularReferencesA.class);
-        System.out.println(referencesA.getReferencesB().getNameB());
+//        CircularReferencesA referencesA = defaultBf.getBean("circularReferencesA", CircularReferencesA.class);
+//        System.out.println(referencesA.getReferencesB().getNameB());
+        Person beanTest = defaultBf.getBean("factoryBeanTest2", Person.class);
+        System.out.println(beanTest);
     }
 }
