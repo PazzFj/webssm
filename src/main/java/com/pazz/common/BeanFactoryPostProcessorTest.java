@@ -1,6 +1,5 @@
 package com.pazz.common;
 
-import com.pazz.service.IPersonService;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanFactoryPostProcessor;
 import org.springframework.beans.factory.config.ConfigurableListableBeanFactory;
@@ -21,7 +20,6 @@ public class BeanFactoryPostProcessorTest implements BeanFactoryPostProcessor {
 
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
         this.beanFactory = (DefaultListableBeanFactory) beanFactory;
-        System.out.println("BeanFactoryPostProcessor: ==>> " + this.beanFactory.getSerializationId());
     }
 
 }

@@ -16,7 +16,6 @@ import org.springframework.stereotype.Component;
 public class InitializingBeanTest implements InitializingBean {
 
     public void afterPropertiesSet() throws Exception {
-        System.out.println("InitializingBean: ==>> afterPropertiesSet");
     }
 
 }

@@ -1,15 +1,9 @@
 package com.pazz.common;
 
-import com.pazz.service.IPersonService;
 import org.springframework.beans.BeansException;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Component;
-import org.springframework.util.ObjectUtils;
-
-import javax.sql.DataSource;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
 
 /**
  * @author: 彭坚

@@ -27,7 +27,7 @@ public class InstantiationAwareBeanPostProcessorTest implements InstantiationAwa
         PropertyValue[] propertyValues = pvs.getPropertyValues();
         for (int i = 0; i < propertyValues.length; i++) {
             PropertyValue propertyValue = propertyValues[i];
-            System.out.println("-->PropertyValue: " + propertyValue.getName() + " == " + propertyValue.getValue());
+            System.out.println("beanName: " + beanName + "-->PropertyValue: " + propertyValue.getName() + " == " + propertyValue.getValue());
         }
         return pvs;
     }
