@@ -2,6 +2,7 @@ package com.pazz.service;
 
 import java.util.List;
 
+import com.pazz.annotation.AspectAnnotation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,6 +33,11 @@ public class PersonService implements IPersonService {
 	public void updatePerson(String name, int pid){
 		Assert.hasText(name, "name is not null!");
 		personDao.updatePerson(name, pid);
+	}
+
+	@AspectAnnotation
+	public void testAspect(){
+		System.out.println("----------------");
 	}
 
 

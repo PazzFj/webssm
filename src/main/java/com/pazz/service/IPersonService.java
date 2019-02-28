@@ -15,4 +15,6 @@ public interface IPersonService {
 
     void updatePerson(String name, int pid);
 
+    void testAspect();
+
 }
