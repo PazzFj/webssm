@@ -17,7 +17,6 @@ public class AutoConfigurable {
 
     @Bean
     @DependsOn(value = "circularReferencesB")
-    @Conditional(ValidateConditionB.class)
     public CircularReferencesA circularReferencesA(CircularReferencesB referencesB) {
         System.out.println("初始化A");
         CircularReferencesA circularReferencesA = new CircularReferencesA();
@@ -26,11 +25,9 @@ public class AutoConfigurable {
     }
 
     @Bean
-    @DependsOn(value = "circularReferencesA")
-    public CircularReferencesB circularReferencesB(CircularReferencesA referencesA) {
+    public CircularReferencesB circularReferencesB() {
         System.out.println("初始化B");
         CircularReferencesB circularReferencesB = new CircularReferencesB();
-        circularReferencesB.setReferencesA(referencesA);
         return circularReferencesB;
     }
 

@@ -51,8 +51,8 @@ public class ApplicationTest {
          WebApplicationContext ac5 = new XmlWebApplicationContext();  //spring web 使用
          */
 
-        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext(AutoConfigurable.class);
-//        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext("com.pazz");
+//        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext(AutoConfigurable.class);
+        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext("com.pazz");
 //        System.out.println(((CircularReferencesA)acc.getBean("circularReferencesA")).getReferencesB());
 
 //        DefaultListableBeanFactory defaultBf = new DefaultListableBeanFactory();

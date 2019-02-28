@@ -4,12 +4,14 @@ import org.springframework.beans.factory.BeanFactory;
 import org.springframework.context.annotation.Condition;
 import org.springframework.context.annotation.ConditionContext;
 import org.springframework.core.type.AnnotatedTypeMetadata;
+import org.springframework.stereotype.Component;
 
 /**
  * @author: 彭坚
  * @create: 2019/2/27 23:25
  * @description:
  */
+@Component
 public class ValidateConditionB implements Condition {
 
     public boolean matches(ConditionContext context, AnnotatedTypeMetadata metadata) {
