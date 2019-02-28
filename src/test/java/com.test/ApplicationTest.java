@@ -51,12 +51,15 @@ public class ApplicationTest {
          WebApplicationContext ac5 = new XmlWebApplicationContext();  //spring web 使用
          */
 
+        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext(AutoConfigurable.class);
+//        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext("com.pazz");
+//        System.out.println(((CircularReferencesA)acc.getBean("circularReferencesA")).getReferencesB());
 
-        DefaultListableBeanFactory defaultBf = new DefaultListableBeanFactory();
-        BeanDefinitionReader bdr = new XmlBeanDefinitionReader(defaultBf);
-        bdr.loadBeanDefinitions(new ClassPathResource("spring-bean.xml"));
-        CircularReferencesA referencesA = defaultBf.getBean("circularReferencesA", CircularReferencesA.class);
-        System.out.println(referencesA);
+//        DefaultListableBeanFactory defaultBf = new DefaultListableBeanFactory();
+//        BeanDefinitionReader bdr = new XmlBeanDefinitionReader(defaultBf);
+//        bdr.loadBeanDefinitions(new ClassPathResource("spring-bean.xml"));
+//        CircularReferencesA referencesA = defaultBf.getBean("circularReferencesA", CircularReferencesA.class);
+//        System.out.println(referencesA);
 
 //        ApplicationContext ac1 = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
 //        String[] s1 = ac1.getBeanNamesForType(BeanPostProcessor.class);     //根据class获取所有beanName

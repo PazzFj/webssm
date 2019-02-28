@@ -3,7 +3,9 @@ package com.pazz.config;
 import com.pazz.bean.CircularReferencesA;
 import com.pazz.bean.CircularReferencesB;
 import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Conditional;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.DependsOn;
 
 /**
  * @author: 彭坚
@@ -14,13 +16,22 @@ import org.springframework.context.annotation.Configuration;
 public class AutoConfigurable {
 
     @Bean
-    public CircularReferencesA circularReferencesA(){
-        return new CircularReferencesA();
+    @DependsOn(value = "circularReferencesB")
+    @Conditional(ValidateConditionB.class)
+    public CircularReferencesA circularReferencesA(CircularReferencesB referencesB) {
+        System.out.println("初始化A");
+        CircularReferencesA circularReferencesA = new CircularReferencesA();
+        circularReferencesA.setReferencesB(referencesB);
+        return circularReferencesA;
     }
 
     @Bean
-    public CircularReferencesB circularReferencesB(){
-        return new CircularReferencesB();
+    @DependsOn(value = "circularReferencesA")
+    public CircularReferencesB circularReferencesB(CircularReferencesA referencesA) {
+        System.out.println("初始化B");
+        CircularReferencesB circularReferencesB = new CircularReferencesB();
+        circularReferencesB.setReferencesA(referencesA);
+        return circularReferencesB;
     }
 
 }

@@ -1,3 +1,4 @@
+com\pazz\config\ValidateConditionB.class
 com\pazz\common\DisposableBeanTest.class
 com\pazz\config\AutoConfigurable.class
 com\pazz\service\IPersonService.class
@@ -13,6 +14,7 @@ com\pazz\bean\CircularReferencesA.class
 com\pazz\common\ApplicationContextAwareTest.class
 com\pazz\common\FactoryBeanTest2.class
 com\pazz\service\PersonService.class
+com\pazz\config\ValidateConditionA.class
 com\pazz\entity\Person.class
 com\pazz\common\BeanFactoryAwareTest.class
 com\pazz\common\BeanFactoryPostProcessorTest.class
