@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * 用于完成一些初始化工作，不过在执行顺序上，接口的方法先于配置。值得注意的是，
  * 这两种方式都是用于完成一些初始化工作，所以相应的方法中不要编写一些复杂且执行时间很长的逻辑。
  */
-@Component
+//@Component
 public class InitializingBeanTest implements InitializingBean {
 
     public void afterPropertiesSet() throws Exception {

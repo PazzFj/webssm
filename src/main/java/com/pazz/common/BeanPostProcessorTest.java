@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * 分别调用这个类中的postProcessBeforeInitialization方法和postProcessAfterInitialization方法
  * 实现初始化的逻辑控制
  */
-@Component
+//@Component
 public class BeanPostProcessorTest implements BeanPostProcessor {
 
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {

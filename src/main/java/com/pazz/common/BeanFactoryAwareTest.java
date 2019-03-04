@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * 实现了BeanFactoryAware接口的类，可以在该Bean被加载的过程中获取加载该Bean的BeanFactory，同
  * 时也可以获取这个BeanFactory中加载的其它Bean
  */
-@Component
+//@Component
 public class BeanFactoryAwareTest implements BeanFactoryAware {
 
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {

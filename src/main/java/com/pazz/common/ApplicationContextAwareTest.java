@@ -12,7 +12,7 @@ import org.springframework.stereotype.Component;
  * 实现了ApplicationContextAware接口的类，可以在该Bean被加载的过程中获取Spring的应用上下文ApplicationContext，
  * 通过ApplicationContext可以获取Spring容器内的很多信息
  */
-@Component
+//@Component
 public class ApplicationContextAwareTest implements ApplicationContextAware {
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {

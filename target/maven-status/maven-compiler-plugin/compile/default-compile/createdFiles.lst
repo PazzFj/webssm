@@ -1,13 +1,16 @@
 com\pazz\config\ValidateConditionB.class
+com\pazz\aspect\LogInterceptor.class
 com\pazz\common\DisposableBeanTest.class
 com\pazz\config\AutoConfigurable.class
+com\pazz\aspect\TestAspect.class
 com\pazz\service\IPersonService.class
+com\pazz\aop\TestProxyFactory.class
 com\pazz\common\InstantiationAwareBeanPostProcessorTest.class
+com\pazz\annotation\AspectAnnotation.class
 com\pazz\common\BeanPostProcessorTest.class
 com\pazz\bean\CircularReferencesB.class
 com\pazz\controller\PersonController.class
 com\pazz\common\FactoryBeanTest.class
-com\pazz\common\LogInterceptor.class
 com\pazz\common\InitializingBeanTest.class
 com\pazz\dao\IPersonDao.class
 com\pazz\bean\CircularReferencesA.class
@@ -17,4 +20,5 @@ com\pazz\service\PersonService.class
 com\pazz\config\ValidateConditionA.class
 com\pazz\entity\Person.class
 com\pazz\common\BeanFactoryAwareTest.class
+com\pazz\aop\BeforeAdvice.class
 com\pazz\common\BeanFactoryPostProcessorTest.class
