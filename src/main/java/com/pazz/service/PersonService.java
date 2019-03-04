@@ -30,16 +30,16 @@ public class PersonService implements IPersonService {
 		return persons;
 	}
 
-	@Transactional(TransactionDefinition.PROPAGATION_REQUIRED)
+	@Transactional
 	public void updatePerson(String name, int pid){
 		Assert.hasText(name, "name is not null!");
 		personDao.updatePerson(name, pid);
 	}
 
-	@AspectAnnotation
-	public void testAspect(){
-		System.out.println("----------------");
-	}
+//	@AspectAnnotation
+//	public void testAspect(){
+//		System.out.println("----------------");
+//	}
 
 
 }

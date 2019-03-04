@@ -52,7 +52,7 @@ public class ApplicationTest {
          */
 
 //        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext(AutoConfigurable.class);
-        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext("com.pazz");
+//        AnnotationConfigApplicationContext acc = new AnnotationConfigApplicationContext("com.pazz");
 //        System.out.println(((CircularReferencesA)acc.getBean("circularReferencesA")).getReferencesB());
 
 //        DefaultListableBeanFactory defaultBf = new DefaultListableBeanFactory();
@@ -61,7 +61,9 @@ public class ApplicationTest {
 //        CircularReferencesA referencesA = defaultBf.getBean("circularReferencesA", CircularReferencesA.class);
 //        System.out.println(referencesA);
 
-//        ApplicationContext ac1 = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+        ApplicationContext ac1 = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+        IPersonService personService = ac1.getBean("personService", IPersonService.class);
+        System.out.println(personService);
 //        String[] s1 = ac1.getBeanNamesForType(BeanPostProcessor.class);     //根据class获取所有beanName
 //        Map<String, BeanPostProcessor> map = ac1.getBeansOfType(BeanPostProcessor.class);   //根据class获取所有对象
 //        String[] s2 = ac1.getBeanNamesForAnnotation(Component.class);       //根据注解class获取所有beanName

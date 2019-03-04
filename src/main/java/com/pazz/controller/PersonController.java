@@ -27,10 +27,10 @@ public class PersonController {
         return "success";
     }
 
-    @GetMapping("/testAspect")
-    public String testAspect() {
-        personService.testAspect();
-        return "success";
-    }
+//    @GetMapping("/testAspect")
+//    public String testAspect() {
+//        personService.testAspect();
+//        return "success";
+//    }
 
 }
