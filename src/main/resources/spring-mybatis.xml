@@ -60,4 +60,6 @@
 
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
     <tx:annotation-driven transaction-manager="transactionManager"/>
+
+    <tx:advice id="transactionInterceptor" transaction-manager="transactionManager"/>
 </beans>
