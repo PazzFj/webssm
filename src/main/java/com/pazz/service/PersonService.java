@@ -2,7 +2,6 @@ package com.pazz.service;
 
 import java.util.List;
 
-import com.pazz.annotation.AspectAnnotation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import org.springframework.stereotype.Service;
 
 import com.pazz.dao.IPersonDao;
 import com.pazz.entity.Person;
-import org.springframework.transaction.TransactionDefinition;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
@@ -36,7 +34,7 @@ public class PersonService implements IPersonService {
 		personDao.updatePerson(name, pid);
 	}
 
-//	@AspectAnnotation
+//	@TransactionalAnnotation
 //	public void testAspect(){
 //		System.out.println("----------------");
 //	}
