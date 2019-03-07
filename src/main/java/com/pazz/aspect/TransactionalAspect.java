@@ -12,9 +12,9 @@ import org.springframework.stereotype.Component;
  */
 @Aspect
 @Component
-public class TestAspect {
+public class TransactionalAspect {
 
-    @Around("@annotation(com.pazz.annotation.AspectAnnotation)")
+    @Around("@annotation(com.pazz.annotation.TransactionalAnnotation)")
     public void around(ProceedingJoinPoint joinPoint) throws Throwable{
         System.out.println("test aspect annotation");
         joinPoint.proceed();
