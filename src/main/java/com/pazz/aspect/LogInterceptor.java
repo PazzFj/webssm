@@ -15,6 +15,7 @@ public class LogInterceptor {
 
     private final Logger log = Logger.getLogger(getClass());
 
+    //切入点
     @Pointcut("execution(public * com.pazz.service..*.getPersons(..)) && args(name, page)")
     public void myMethod(String name, int page){
 
@@ -45,9 +46,9 @@ public class LogInterceptor {
 //        log.info("AfterThrowing==>> name: = " + name);
     }
 
-    @Around("execution(public * com.pazz.service..*.getPersons(..)) && args(name, page)")
-    public Object Around(ProceedingJoinPoint jp, String name, int page) throws Throwable {
-        log.info("==================>>>>>> Around() name: = " + name + "  page: = " + page);
+    @Around("execution(public * com.pazz.service..*.getPersons(..))")
+    public Object Around(ProceedingJoinPoint jp) throws Throwable {
+        log.info("=======>>>>>> Around() name: = " + jp.getArgs()[0] + "  page: = " + jp.getArgs()[1]);
         Object ret = jp.proceed();
         System.out.println("==>> result:  " + ret);
         return ret;

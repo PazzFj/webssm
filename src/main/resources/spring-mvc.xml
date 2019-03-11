@@ -15,12 +15,6 @@
 
     <aop:aspectj-autoproxy proxy-target-class="false" expose-proxy="false" />
 
-    <!--<aop:config>-->
-        <!--<aop:pointcut id="pointcut" expression="execution(public * com.pazz.service..*.getPersons(..))" />-->
-        <!--<aop:advisor pointcut-ref="pointcut" advice-ref="" />-->
-        <!--<aop:advisor pointcut-ref="pointcut" advice-ref="" />-->
-    <!--</aop:config>-->
-
     <!--避免IE执行AJAX时，返回JSON出现下载文件 -->
     <bean id="mappingJacksonHttpMessageConverter" class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter">
         <property name="supportedMediaTypes">
@@ -29,6 +23,7 @@
             </list>
         </property>
     </bean>
+
     <!-- 启动SpringMVC的注解功能，完成请求和注解POJO的映射 -->
     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter">
         <property name="messageConverters">

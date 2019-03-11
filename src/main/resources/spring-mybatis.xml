@@ -8,8 +8,6 @@
                         http://www.springframework.org/schema/tx
                         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
-    <bean id="personService" class="com.pazz.service.PersonService" depends-on="IPersonDao"></bean>
-
     <!-- 加载 properties 文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:jdbc.properties"/>
@@ -34,30 +32,24 @@
     </bean>
 
     <!-- mybatis和spring完美整合，不需要mybatis的配置映射文件 -->
-    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean"
-          p:configLocation="classpath:mybatis-config.xml"
-          p:dataSource-ref="dataSource"
-          p:mapperLocations="classpath:mapping/*.xml">
-        <!--<property name="dataSource" ref="dataSource"/>-->
+    <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
+        <property name="dataSource" ref="dataSource"/>
         <!-- 自动扫描mapping.xml文件 -->
-        <!--<property name="mapperLocations" value="classpath:mapping/*.xml"></property>-->
+        <property name="mapperLocations" value="classpath:mapping/*.xml"></property>
         <!-- mybatis配置文件 -->
-        <!--<property name="configLocation" value="classpath:mybatis-config.xml"></property>-->
+        <property name="configLocation" value="classpath:mybatis-config.xml"></property>
     </bean>
 
     <!-- DAO接口所在包名，Spring会自动查找其下的类 -->
-    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer"
-          p:basePackage="com.pazz.dao"
-          p:sqlSessionFactoryBeanName="sqlSessionFactory">
-        <!--<property name="basePackage" value="com.pazz.dao"/>-->
-        <!--<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>-->
+    <bean class="org.mybatis.spring.mapper.MapperScannerConfigurer">
+        <property name="basePackage" value="com.pazz.dao"/>
+        <property name="sqlSessionFactoryBeanName" value="sqlSessionFactory"></property>
     </bean>
 
 
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->
-    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager"
-          p:dataSource-ref="dataSource">
-        <!--<property name="dataSource" ref="dataSource"/>-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+        <property name="dataSource" ref="dataSource"/>
     </bean>
 
     <!-- (事务管理)transaction manager, use JtaTransactionManager for global tx -->

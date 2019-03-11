@@ -19,6 +19,12 @@ public class Person {
         this.pname = pname;
     }
 
+    public Person(int pid, String pname, int page) {
+        this.pid = pid;
+        this.pname = pname;
+        this.page = page;
+    }
+
     @Override
     public String toString() {
         return "Person{" +

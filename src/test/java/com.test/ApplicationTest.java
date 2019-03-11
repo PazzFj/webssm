@@ -1,6 +1,6 @@
 package com.test;
 
-import com.pazz.service.IPersonService;
+import com.pazz.service.IService;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
@@ -22,14 +22,14 @@ public class ApplicationTest {
          */
 
         ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
-//        String[] service = ac.getBeanNamesForType(IPersonService.class);
-        IPersonService service = (IPersonService) ac.getBean("personService");
+//        String[] service = ac.getBeanNamesForType(IService.class);
+        IService service = (IService) ac.getBean("personService");
         System.out.println(Arrays.asList(service));
 
 //        ApplicationContext acac = new AnnotationConfigApplicationContext("com.pazz");
 
 //        ApplicationContext ac1 = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
-//        IPersonService personService = ac1.getBean("personService", IPersonService.class);
+//        IService personService = ac1.getBean("personService", IService.class);
 //        System.out.println(personService);
 //        String[] s1 = ac1.getBeanNamesForType(BeanPostProcessor.class);     //根据class获取所有beanName
 //        Map<String, BeanPostProcessor> map = ac1.getBeansOfType(BeanPostProcessor.class);   //根据class获取所有对象

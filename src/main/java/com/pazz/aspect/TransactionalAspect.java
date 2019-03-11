@@ -3,7 +3,6 @@ package com.pazz.aspect;
 import org.aspectj.lang.ProceedingJoinPoint;
 import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
-import org.springframework.stereotype.Component;
 
 /**
  * @author: 彭坚
@@ -11,12 +10,11 @@ import org.springframework.stereotype.Component;
  * @description:
  */
 @Aspect
-@Component
 public class TransactionalAspect {
 
-    @Around("@annotation(com.pazz.annotation.TransactionalAnnotation)")
+    @Around("@annotation(com.pazz.annotation.LogPrintAnnotation)")
     public void around(ProceedingJoinPoint joinPoint) throws Throwable{
-        System.out.println("test aspect annotation");
+        System.out.println("log ==>> " + joinPoint.getArgs() != null ? joinPoint.getArgs()[0] : "null");
         joinPoint.proceed();
     }
 
