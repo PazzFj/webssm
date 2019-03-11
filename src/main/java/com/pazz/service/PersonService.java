@@ -5,17 +5,19 @@ import java.util.List;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 import com.pazz.dao.IPersonDao;
 import com.pazz.entity.Person;
+import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.Assert;
 
 /**
  * Created by Administrator on 2017-4-8.
  */
-@Service
+@Service("personService")
 public class PersonService implements IPersonService {
 
 	private static final Logger log = LoggerFactory.getLogger(PersonService.class);
@@ -28,7 +30,7 @@ public class PersonService implements IPersonService {
 		return persons;
 	}
 
-	@Transactional
+	@Transactional(propagation=Propagation.REQUIRED)
 	public void updatePerson(String name, int pid){
 		Assert.hasText(name, "name is not null!");
 		personDao.updatePerson(name, pid);

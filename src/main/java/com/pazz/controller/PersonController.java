@@ -12,18 +12,18 @@ import java.util.List;
 public class PersonController {
 
     @Autowired
-    private IPersonService personService;
+    private IPersonService service;
 
     @ResponseBody
     @GetMapping("/list")
     public List<Person> queryList(Person person) {
-        List<Person> personList = personService.getPersons(person.getPname(), person.getPage());
+        List<Person> personList = service.getPersons(person.getPname(), person.getPage());
         return personList;
     }
 
     @GetMapping("/updatePerson")
     public String updatePerson(@RequestParam("name") String name, @RequestParam("pid") int pid) {
-        personService.updatePerson(name, pid);
+        service.updatePerson(name, pid);
         return "success";
     }
 

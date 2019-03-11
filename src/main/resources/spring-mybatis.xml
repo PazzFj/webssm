@@ -8,6 +8,8 @@
                         http://www.springframework.org/schema/tx
                         http://www.springframework.org/schema/tx/spring-tx.xsd">
 
+    <bean id="personService" class="com.pazz.service.PersonService" depends-on="IPersonDao"></bean>
+
     <!-- 加载 properties 文件 -->
     <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
         <property name="location" value="classpath:jdbc.properties"/>

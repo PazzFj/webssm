@@ -12,6 +12,13 @@ public class Person {
     private String pname;
     private int page;
 
+    public Person() {
+    }
+
+    public Person(String pname) {
+        this.pname = pname;
+    }
+
     @Override
     public String toString() {
         return "Person{" +
