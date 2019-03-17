@@ -10,7 +10,7 @@ import java.io.IOException;
  * @create: 2019/3/13 21:03
  * @description:
  */
-@Component
+//@Component
 public class LikeFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {

@@ -3,6 +3,7 @@ package com.pazz.http;
 import org.springframework.stereotype.Component;
 
 import javax.servlet.*;
+import javax.servlet.http.HttpServlet;
 import java.io.IOException;
 
 /**
@@ -10,32 +11,24 @@ import java.io.IOException;
  * @create: 2019/3/13 21:00
  * @description:
  */
-@Component
-public class LikeServlet implements Servlet {
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        System.out.println("init servlet config");
-    }
+//@Component
+public class LikeServlet extends HttpServlet {
 
     @Override
-    public ServletConfig getServletConfig() {
-        System.out.println("get servlet config");
-        return null;
+    public void init() throws ServletException {
+        System.out.println("servlet init");
+        super.init();
     }
 
     @Override
     public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
-        System.out.println("service");
-    }
-
-    @Override
-    public String getServletInfo() {
-        System.out.println("get servlet info");
-        return null;
+        System.out.println("servlet service");
+        super.service(req, res);
     }
 
     @Override
     public void destroy() {
-        System.out.println("destroy");
+        System.out.println("servlet destroy");
+        super.destroy();
     }
 }
