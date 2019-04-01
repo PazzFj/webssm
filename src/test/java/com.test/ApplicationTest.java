@@ -23,7 +23,7 @@ public class ApplicationTest {
 
         ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
 //        String[] service = ac.getBeanNamesForType(IService.class);
-        IService service = (IService) ac.getBean("personService");
+        IService service = ac.getBean("personService", IService.class);
         System.out.println(Arrays.asList(service));
 
 //        ApplicationContext acac = new AnnotationConfigApplicationContext("com.pazz");

@@ -22,7 +22,6 @@ public class PersonService implements IService<Person> {
 
 	private static final Logger log = LoggerFactory.getLogger(PersonService.class);
 
-	@Autowired
 	private IPersonDao personDao;
 
 	public  List<Person> select(String name, int page){
@@ -37,4 +36,7 @@ public class PersonService implements IService<Person> {
 		personDao.updatePerson(name, pid);
 	}
 
+	public void setPersonDao(IPersonDao personDao) {
+		this.personDao = personDao;
+	}
 }

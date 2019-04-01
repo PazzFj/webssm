@@ -4,6 +4,7 @@ import com.pazz.annotation.LogPrintAnnotation;
 import com.pazz.entity.Person;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 import java.util.List;
@@ -24,6 +25,7 @@ public class TestService implements IService<Person> {
 
     @Override
     @LogPrintAnnotation
+    @Transactional
     public void update(String name, int pid) {
         System.out.println("test updating...");
     }
