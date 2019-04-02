@@ -12,10 +12,10 @@ import org.aspectj.lang.annotation.Aspect;
 @Aspect
 public class TransactionalAspect {
 
-    @Around("@annotation(com.pazz.annotation.LogPrintAnnotation)")
-    public void around(ProceedingJoinPoint joinPoint) throws Throwable{
-        System.out.println("log ==>> " + joinPoint.getArgs() != null ? joinPoint.getArgs()[0] : "null");
-        joinPoint.proceed();
+    @Around("@annotation(com.pazz.aspect.annotation.LogPrintAnnotation)")
+    public void around(ProceedingJoinPoint joinPoint) throws Throwable {
+        Object obj = joinPoint.proceed();
+        System.out.println("transaction : ==>>  " + obj);
     }
 
 }

@@ -1,4 +1,4 @@
-package com.pazz.annotation;
+package com.pazz.aspect.annotation;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

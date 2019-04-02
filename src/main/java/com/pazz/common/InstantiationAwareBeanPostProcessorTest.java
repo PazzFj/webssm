@@ -23,7 +23,7 @@ import java.util.List;
  * @description: InstantiationAwareBeanPostProcessor接口，
  * 每个Bean的实例化(即调用构造函数)之前和之后
  */
-@Component
+//@Component
 public class InstantiationAwareBeanPostProcessorTest implements InstantiationAwareBeanPostProcessor, BeanFactoryAware {
 
     private BeanFactory beanFactory;
@@ -34,7 +34,7 @@ public class InstantiationAwareBeanPostProcessorTest implements InstantiationAwa
             ((PersonService) service).setPersonDao(new IPersonDao() {
                 @Override
                 public List<Person> getPersons(String name, int page) {
-                    return Arrays.asList(new Person(1, "aaa", 01), new Person(2, "bbb", 02));
+                    return Arrays.asList(new Person(1, "before post processor", 66), new Person(2, "after post processor", 88));
                 }
 
                 @Override

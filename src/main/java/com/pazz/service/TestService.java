@@ -1,6 +1,6 @@
 package com.pazz.service;
 
-import com.pazz.annotation.LogPrintAnnotation;
+import com.pazz.aspect.annotation.LogPrintAnnotation;
 import com.pazz.entity.Person;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;

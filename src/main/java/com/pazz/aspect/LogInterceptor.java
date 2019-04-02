@@ -16,12 +16,12 @@ public class LogInterceptor {
     private final Logger log = Logger.getLogger(getClass());
 
     //切入点
-    @Pointcut("execution(public * com.pazz.service..*.getPersons(..)) && args(name, page)")
+    @Pointcut("execution(public * com.pazz.service..*.select(..)) && args(name, page)")
     public void myMethod(String name, int page){
 
     }
 
-    @Pointcut("execution(public * com.pazz.service.PersonService.updatePerson(..)) && args(name, pid)")
+    @Pointcut("execution(public * com.pazz.service.PersonService.update(..)) && args(name, pid)")
     public void myMethod2(String name, int pid){
 
     }
@@ -36,22 +36,21 @@ public class LogInterceptor {
 //        log.info("After==>> name: = " + name);
     }
 
-    @AfterReturning("execution(public * com.pazz.service..*.getPersons(..)) && args(name, page)")
+    @AfterReturning("execution(public * com.pazz.service..*.select(..)) && args(name, page)")
     public void AfterReturning(String name, int page) {
 //        log.info("AfterReturning==>> name: = " + name);
     }
 
-    @AfterThrowing("execution(public * com.pazz.service..*.getPersons(..)) && args(name, page)")
+    @AfterThrowing("execution(public * com.pazz.service..*.select(..)) && args(name, page)")
     public void AfterThrowing(String name, int page) {
 //        log.info("AfterThrowing==>> name: = " + name);
     }
 
-    @Around("execution(public * com.pazz.service..*.getPersons(..))")
+    @Around("execution(public * com.pazz.service..*.select(..))")
     public Object Around(ProceedingJoinPoint jp) throws Throwable {
-        log.info("=======>>>>>> Around() name: = " + jp.getArgs()[0] + "  page: = " + jp.getArgs()[1]);
-        Object ret = jp.proceed();
-        System.out.println("==>> result:  " + ret);
-        return ret;
+        Object result = jp.proceed();
+        log.info("result: ==>> " + result);
+        return result;
     }
 
 

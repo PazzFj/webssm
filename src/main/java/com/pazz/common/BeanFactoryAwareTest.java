@@ -1,5 +1,6 @@
 package com.pazz.common;
 
+import com.pazz.entity.Person;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -16,16 +17,20 @@ import org.springframework.stereotype.Component;
 @Component
 public class BeanFactoryAwareTest implements BeanFactoryAware, InitializingBean {
 
+    private BeanFactory beanFactory;
+
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
         System.out.println("BeanFactoryAware: ==>> " + beanFactory);
+        this.beanFactory = beanFactory;
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("BeanFactoryAware: ==>> " + "afterPropertiesSet");
+        System.out.println("after properties set bean factory");
+        System.out.println(beanFactory.getBean(FactoryBeanTest.class).getObject());
     }
 
     public BeanFactoryAwareTest() {
-        System.out.println("BeanFactoryAware: ==>> " + "BeanFactoryAwareTest");
+        System.out.println("constructor aware bean factory");
     }
 }

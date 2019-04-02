@@ -2,10 +2,9 @@ package com.pazz.service;
 
 import java.util.List;
 
-import com.pazz.annotation.LogPrintAnnotation;
+import com.pazz.aspect.annotation.LogPrintAnnotation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 
 import com.pazz.dao.IPersonDao;
 import com.pazz.entity.Person;
