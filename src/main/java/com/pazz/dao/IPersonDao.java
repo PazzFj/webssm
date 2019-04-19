@@ -11,6 +11,6 @@ public interface IPersonDao {
 
     List<Person> getPersons(@Param("name") String name, @Param("page") int page);
 
-    void updatePerson(@Param("name") String name, @Param("pid") int pid);
+    void updatePerson(@Param("name") String name, @Param("id") int id);
 
 }

@@ -1,10 +1,18 @@
 package com.test;
 
+import com.pazz.entity.Person;
 import com.pazz.service.IService;
+import org.apache.ibatis.io.Resources;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import java.io.InputStream;
 import java.util.Arrays;
+import java.util.HashMap;
+import java.util.Map;
 
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
@@ -21,10 +29,10 @@ public class ApplicationTest {
              WebApplicationContext ac5 = new XmlWebApplicationContext();  //spring web 使用
          */
 
-        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+//        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
 //        String[] service = ac.getBeanNamesForType(IService.class);
-        IService service = ac.getBean("personService", IService.class);
-        System.out.println(Arrays.asList(service));
+//        IService service = ac.getBean("personService", IService.class);
+//        System.out.println(Arrays.asList(service));
 
 //        ApplicationContext acac = new AnnotationConfigApplicationContext("com.pazz");
 
@@ -36,5 +44,16 @@ public class ApplicationTest {
 //        String[] s2 = ac1.getBeanNamesForAnnotation(Component.class);       //根据注解class获取所有beanName
 //        Map<String, Object> map1 = ac1.getBeansWithAnnotation(Component.class); ////根据注解class获取所有对象
 //        Component component = ac1.findAnnotationOnBean("beanFactoryAwareTest", Component.class);  //根据beanName注解class获取注解对象
+
+        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
+        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+        SqlSessionFactory sessionFactory = builder.build(inputStream);
+        SqlSession sqlSession = sessionFactory.openSession(true);
+        Map<String, Object> map = new HashMap<>();
+        map.put("name", "jay");
+        map.put("id", "1");
+        sqlSession.update("updatePerson", map);
+        sqlSession.commit();
+        sqlSession.close();
     }
 }
