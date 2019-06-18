@@ -45,15 +45,15 @@ public class ApplicationTest {
 //        Map<String, Object> map1 = ac1.getBeansWithAnnotation(Component.class); ////根据注解class获取所有对象
 //        Component component = ac1.findAnnotationOnBean("beanFactoryAwareTest", Component.class);  //根据beanName注解class获取注解对象
 
-        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
-        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
-        SqlSessionFactory sessionFactory = builder.build(inputStream);
-        SqlSession sqlSession = sessionFactory.openSession(true);
-        Map<String, Object> map = new HashMap<>();
-        map.put("name", "jay");
-        map.put("id", "1");
-        sqlSession.update("updatePerson", map);
-        sqlSession.commit();
-        sqlSession.close();
+//        SqlSessionFactoryBuilder builder = new SqlSessionFactoryBuilder();
+//        InputStream inputStream = Resources.getResourceAsStream("mybatis-config.xml");
+//        SqlSessionFactory sessionFactory = builder.build(inputStream);
+//        SqlSession sqlSession = sessionFactory.openSession(true);
+//        Map<String, Object> map = new HashMap<>();
+//        map.put("name", "jay");
+//        map.put("id", "1");
+//        sqlSession.update("updatePerson", map);
+//        sqlSession.commit();
+//        sqlSession.close();
     }
 }

@@ -21,8 +21,9 @@ public class PersonController {
     @ResponseBody
     @GetMapping("/list")
     public List<Person> queryList(Person person) {
-        service.select(person.getPname(), person.getPage());
-        return (List<Person>) wrapObject.getMap().get("data");
+//        service.select(person.getPname(), person.getPage());
+//        return (List<Person>) wrapObject.getMap().get("data");
+        return null;
     }
 
     @GetMapping("/updatePerson")
