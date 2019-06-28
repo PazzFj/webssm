@@ -26,12 +26,12 @@ public class LogInterceptor {
 
     }
 
-    @Before("myMethod(name, page)")
+    @Before("myMethod2(name, page)")
     public void before(String name, int page) {
 //        log.info("==================>>>>>> Before() name: = " + name + "  page: = " + page);
     }
 
-    @After("myMethod(name, page)")
+    @After("myMethod2(name, page)")
     public void after(String name, int page) {
 //        log.info("After==>> name: = " + name);
     }
