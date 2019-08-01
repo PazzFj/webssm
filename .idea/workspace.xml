@@ -6,66 +6,188 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="afc81ae8-86f5-4322-8f65-3e8b1fed9524" name="Default" comment="">
+    <list default="true" id="afc81ae8-86f5-4322-8f65-3e8b1fed9524" name="Default" comment="v11 add PageHelper">
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pazz/common/BeanFactoryAwareTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pazz/common/BeanFactoryAwareTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/pazz/entity/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/pazz/entity/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1200447992">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="44" />
+          <entry key="project.open.time.0" value="2" />
+          <entry key="project.open.time.1" value="4" />
+          <entry key="project.open.time.10" value="3" />
+          <entry key="project.open.time.11" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.2" value="10" />
+          <entry key="project.open.time.3" value="7" />
+          <entry key="project.open.time.4" value="5" />
+          <entry key="project.open.time.5" value="6" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="3" />
+          <entry key="project.open.time.9" value="4" />
+          <entry key="project.opened" value="48" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="DispatcherServlet" value="1" />
+          <entry key="ServletContainerInitializer" value="1" />
+          <entry key="class" value="45" />
+          <entry key="dtd" value="1" />
+          <entry key="iml" value="1" />
+          <entry key="java" value="654" />
+          <entry key="properties" value="5" />
+          <entry key="xml" value="89" />
+          <entry key="xsd" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CLASS" value="45" />
+          <entry key="DTD" value="1" />
+          <entry key="IDEA_MODULE" value="1" />
+          <entry key="JAVA" value="654" />
+          <entry key="Properties" value="5" />
+          <entry key="SPI" value="1" />
+          <entry key="UML" value="1" />
+          <entry key="XML" value="96" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="class" value="3" />
+          <entry key="dummy" value="60" />
+          <entry key="java" value="3666" />
+          <entry key="properties" value="2" />
+          <entry key="txt" value="133" />
+          <entry key="xml" value="464" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CLASS" value="3" />
+          <entry key="JAVA" value="3666" />
+          <entry key="PLAIN_TEXT" value="193" />
+          <entry key="Properties" value="2" />
+          <entry key="XML" value="464" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="ApplicationTest.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
+            <state relative-caret-position="391">
+              <caret line="38" column="77" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="77" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="507">
+              <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="357">
+              <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
               <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#1035#1067#1" expanded="true" />
+                <element signature="e#916#932#0" expanded="true" />
+                <element signature="e#970#982#0" expanded="true" />
+                <element signature="e#1025#1038#0" expanded="true" />
+                <element signature="e#1081#1094#0" expanded="true" />
+                <element signature="e#1260#1274#0" expanded="true" />
+                <element signature="e#1351#1363#0" expanded="true" />
+                <element signature="e#1440#1452#0" expanded="true" />
+                <element signature="e#1532#1544#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ClassPathXmlApplicationContext.java" pinned="false" current-in-tab="true">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+            <state relative-caret-position="85">
+              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/entity/Person.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Interface" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jackson-databind</find>
-      <find>context:component-scan</find>
-      <find>ResponseBuilder</find>
-      <find>getBeanClassName</find>
-      <find>contextConfigLocation</find>
-      <find>mvc:annotation-driven</find>
-      <find>varchar</find>
-      <find>jdbcType</find>
-      <find>mysql-driver.version</find>
-      <find>log4j.version</find>
-      <find>slf4j.version</find>
-      <find>java.jms.version</find>
-      <find>jackson.version</find>
-      <find>HttpMessageConverter</find>
       <find>sqlSessionFactory</find>
       <find>StandardEnvironment</find>
       <find>setConfigLocations</find>
       <find>component-scan</find>
+      <find>postProcessProperties</find>
+      <find>InstantiationAwareBeanPostProcessor</find>
+      <find>postProcessPropertyValues</find>
+      <find>postProcessAfterInitialization</find>
+      <find>postProcessBeforeInstantiation</find>
+      <find>asdf</find>
+      <find>abstract</find>
+      <find>earlySingletonObjects</find>
+      <find>getSingleton(String beanName, boolean allowEarlyReference)</find>
+      <find>isSingletonCurrentlyInCreation</find>
+      <find>registerBeanPostProcessors</find>
+      <find>swa</find>
+      <find>==================&gt;&gt;&gt;&gt;&gt;&gt; Around()</find>
+      <find>swagger</find>
+      <find>contextInitialized</find>
+      <find>aspect-driven</find>
+      <find>mybatis-config.xml</find>
+      <find>STDOUT_LOGGING</find>
+      <find>No mapping for</find>
+      <find>RequestMappinginfo</find>
+      <find>afterPropertiesSet</find>
+      <find>AbstractHelperDialect</find>
+      <find>getSmartCountSql</find>
+      <find>jdbc</find>
+      <find>ContextLoaderListener</find>
+      <find>contextConfigLocation</find>
     </findStrings>
     <dirStrings>
       <dir>D:\repository\pazzfj\web-ssm</dir>
+      <dir>D:\Java\PazzFj\web-ssm</dir>
     </dirStrings>
   </component>
   <component name="Git.Settings">
@@ -82,18 +204,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/.settings/.jsdtscope" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pazz/entity/Person.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pazz/configuration/TestConfiguration.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/jdbc.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pazz/aop/AspectJConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/aspectTest.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/pazz/controller/PersonController.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/mapping/PersonMapping.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/annotation/AspectAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/aspect/TestAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/aop/Target.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/service/IPersonService.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/annotation/TransactionalAnnotation.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/aop/TestProxyFactory.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/service/PersonTestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/aspect/LogInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/aspect/TransactionalAspect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/service/PersonService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/service/TestService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/service/IService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/InstantiationAwareBeanPostProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/BeanPostProcessorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/http/LikeServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/http/LikeFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/resources/spring-mvc.xml" />
-        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/mybatis-config.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/TestDataWarp.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/WrapObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/controller/PersonController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/TestInterceptor.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/WrapObject.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/StringUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/Dialect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageRowBounds.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/Page.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageSerializable.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageInfo.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/ISelect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageException.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/MetaObjectUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageObjectUtil.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageMethod.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageHelper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageParams.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/PageAutoDialect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/MSUtils.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/AbstractDialect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/CountSqlParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/Constant.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/AbstractHelperDialect.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/helper/OrderByParser.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/common/BeanFactoryAwareTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/pazz/entity/Person.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/spring-mybatis.xml" />
       </list>
     </option>
   </component>
@@ -113,8 +274,8 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="D:/software/tool/apache-maven-3.3.9" />
-        <option name="userSettingsFile" value="D:\software\tool\apache-maven-3.3.9\conf\settings.xml" />
+        <option name="mavenHome" value="D:/Maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\Maven\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
   </component>
@@ -135,10 +296,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="115" />
-    <option name="y" value="37" />
-    <option name="width" value="1719" />
-    <option name="height" value="987" />
+    <option name="x" value="368" />
+    <option name="y" value="20" />
+    <option name="width" value="1400" />
+    <option name="height" value="1000" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -146,6 +307,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -176,86 +338,36 @@
               <item name="web-ssm" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="pazz" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="webapp" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="web-ssm" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com.test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.1.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.1.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.1.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="web-ssm" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Maven: org.springframework:spring-context:5.1.3.RELEASE" type="70bed36:NamedLibraryElementNode" />
-              <item name="spring-context-5.1.3.RELEASE.jar" type="462c0819:PsiDirectoryNode" />
-              <item name="META-INF" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="SearchEverywhereHistoryKey" value="PropertyCop&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/property/PropertyCopier.java&#10;ReflectorFactory&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.ReflectorFactory&#10;Reflector&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/Reflector.java&#10;TypeAliasRegistry&#9;PSI&#9;JAVA://org.apache.ibatis.type.TypeAliasRegistry&#10;TypeHandlerRegistry&#9;PSI&#9;JAVA://org.apache.ibatis.type.TypeHandlerRegistry&#10;IntegerTypeHandler&#9;PSI&#9;JAVA://org.apache.ibatis.type.IntegerTypeHandler&#10;PreparedS&#9;PSI&#9;JAVA://java.sql.PreparedStatement&#10;ResultSet&#9;PSI&#9;JAVA://java.sql.ResultSet&#10;JavaTYpe&#9;PSI&#9;JAVA://com.fasterxml.jackson.databind.JavaType&#10;JdbcType&#9;PSI&#9;JAVA://org.apache.ibatis.type.JdbcType&#10;MetaObject&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.MetaObject&#10;ObjectWrapper&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.wrapper.ObjectWrapper&#10;MetaClass&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.MetaClass&#10;Property&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/property/PropertyNamer.java&#10;Executor&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/Executor.java&#10;Executable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/reflect/Executable.java&#10;Class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Class.java&#10;TypeParameterResolver&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/TypeParameterResolver.java&#10;DataSource&#9;PSI&#9;JAVA://javax.sql.DataSource&#10;BusinessException&#9;FILE&#9;file://D:/repository/pazzfj/web-ssm/src/main/java/com/pazz/exception/BusinessException.java&#10;Lock&#9;PSI&#9;JAVA://java.util.concurrent.locks.Lock&#10;CyclicBarr&#9;PSI&#9;JAVA://java.util.concurrent.CyclicBarrier&#10;Cycle&#9;PSI&#9;JAVA://java.awt.MultipleGradientPaint.CycleMethod&#10;ILogExceptionWriter&#9;PSI&#9;JAVA://com.pazz.log.ILogExceptionWriter&#10;AnnotationConfigApplicationContext&#9;FILE&#9;jar://D:/repository/MavenJar/org/springframework/spring-context/4.3.18.RELEASE/spring-context-4.3.18.RELEASE-sources.jar!/org/springframework/context/annotation/AnnotationConfigApplicationContext.java" />
+    <property name="SearchEverywhereHistoryKey" value="ThreadLocal&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ThreadLocal.java&#10;Platform&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java&#10;UrlPath&#9;PSI&#9;JAVA://org.springframework.web.util.UrlPathHelper&#10;MappingInfo&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/mvc/method/RequestMappingInfo.java&#10;AbstractHandlerMethodMapping&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/handler/AbstractHandlerMethodMapping.java&#10;Dis&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;DispatcherServlet&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java&#10;AopNamespaceHandler&#9;PSI&#9;JAVA://org.springframework.aop.config.AopNamespaceHandler&#10;TxNamespacehandler&#9;PSI&#9;JAVA://org.springframework.transaction.config.TxNamespaceHandler&#10;AutoProxyCreator&#9;PSI&#9;JAVA://org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator&#10;AbstractAutowireCapableBeanFac&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java&#10;Delega&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java&#10;BeanDefinitionDocumentRead&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java&#10;XmlBeanDefinitionReader&#9;PSI&#9;JAVA://org.springframework.beans.factory.xml.XmlBeanDefinitionReader&#10;AutowireCapableBean&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java&#10;PropertyValue&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/MutablePropertyValues.java&#10;AbstractAutowireCapableBeanFactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory&#10;AbstractBean&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java&#10;AbstractBeanfactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.AbstractBeanFactory&#10;XmlReaderContext&#9;PSI&#9;JAVA://org.springframework.beans.factory.xml.XmlReaderContext&#10;TxNam&#9;PSI&#9;JAVA://org.springframework.transaction.config.TxNamespaceHandler&#10;DefaultBeanDefinitionDocumentRead&#9;PSI&#9;JAVA://org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader&#10;ConfigurationClassPostProcessor&#9;PSI&#9;JAVA://org.springframework.context.annotation.ConfigurationClassPostProcessor&#10;AbstractAutowireBeanFactory&#9;PSI&#9;JAVA://org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory&#10;ClassPathScanningCandidateComponentProvider&#9;PSI&#9;JAVA://org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider&#10;AnnotationConfigBeanDefinitionParser&#9;PSI&#9;JAVA://org.springframework.context.annotation.AnnotationConfigBeanDefinitionParser&#10;DefaultNamespaceHandlerresolver&#9;PSI&#9;JAVA://org.springframework.beans.factory.xml.DefaultNamespaceHandlerResolver&#10;DefaultBeanDefinitionD&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/DefaultBeanDefinitionDocumentReader.java&#10;BeanDelegate&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java&#10;BeanDefinitionParserDelegate&#9;FILE&#9;jar://D:/Maven/repository/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/BeanDefinitionParserDelegate.java&#10;PropertyCop&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/property/PropertyCopier.java&#10;ReflectorFactory&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.ReflectorFactory&#10;Reflector&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/Reflector.java&#10;TypeAliasRegistry&#9;PSI&#9;JAVA://org.apache.ibatis.type.TypeAliasRegistry&#10;TypeHandlerRegistry&#9;PSI&#9;JAVA://org.apache.ibatis.type.TypeHandlerRegistry&#10;IntegerTypeHandler&#9;PSI&#9;JAVA://org.apache.ibatis.type.IntegerTypeHandler&#10;PreparedS&#9;PSI&#9;JAVA://java.sql.PreparedStatement&#10;ResultSet&#9;PSI&#9;JAVA://java.sql.ResultSet&#10;JavaTYpe&#9;PSI&#9;JAVA://com.fasterxml.jackson.databind.JavaType&#10;JdbcType&#9;PSI&#9;JAVA://org.apache.ibatis.type.JdbcType&#10;MetaObject&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.MetaObject&#10;ObjectWrapper&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.wrapper.ObjectWrapper&#10;MetaClass&#9;PSI&#9;JAVA://org.apache.ibatis.reflection.MetaClass&#10;Property&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/property/PropertyNamer.java&#10;Executor&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/executor/Executor.java&#10;Executable&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/reflect/Executable.java&#10;Class&#9;FILE&#9;jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/Class.java&#10;TypeParameterResolver&#9;FILE&#9;jar://D:/repository/MavenJar/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/reflection/TypeParameterResolver.java&#10;DataSource&#9;PSI&#9;JAVA://javax.sql.DataSource&#10;BusinessException&#9;FILE&#9;file://D:/repository/pazzfj/web-ssm/src/main/java/com/pazz/exception/BusinessException.java" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1564642564396" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.ide.settings.uml" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.fileTypes" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.pazz.config" />
+      <recent name="com.pazz.common" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Java\PazzFj\web-ssm\src\main\java\com\pazz\common" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -280,50 +392,32 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
       <properties />
       <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
     </configuration>
     <configuration name="run" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 8.5.24" ALTERNATIVE_JRE_ENABLED="true" ALTERNATIVE_JRE_PATH="1.8">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/person/getPersons" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/person/list" />
       <option name="UPDATING_POLICY" value="restart-server" />
       <deployment>
         <artifact name="web-ssm:war">
@@ -388,7 +482,8 @@
           <option name="PROGRAM_PARAMETERS" value="" />
         </SHUTDOWN>
       </ConfigurationWrapper>
-      <method>
+      <method v="2">
+        <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="web-ssm:war" />
         </option>
@@ -422,6 +517,54 @@
       <workItem from="1544406083138" duration="738000" />
       <workItem from="1545183189943" duration="17752000" />
       <workItem from="1547713457416" duration="10803000" />
+      <workItem from="1548242235498" duration="26965000" />
+      <workItem from="1548640552611" duration="8466000" />
+      <workItem from="1548762195072" duration="132000" />
+      <workItem from="1549114770180" duration="677000" />
+      <workItem from="1549370736753" duration="9323000" />
+      <workItem from="1549957158159" duration="6259000" />
+      <workItem from="1550073122011" duration="613000" />
+      <workItem from="1550075771094" duration="589000" />
+      <workItem from="1550506264258" duration="1222000" />
+      <workItem from="1550536586802" duration="1215000" />
+      <workItem from="1550582636961" duration="4217000" />
+      <workItem from="1550622713082" duration="1265000" />
+      <workItem from="1550672375281" duration="2360000" />
+      <workItem from="1550749742858" duration="1913000" />
+      <workItem from="1550838232713" duration="11928000" />
+      <workItem from="1550908847283" duration="771000" />
+      <workItem from="1551010401168" duration="4611000" />
+      <workItem from="1551063442184" duration="717000" />
+      <workItem from="1551097318719" duration="6965000" />
+      <workItem from="1551273511209" duration="19189000" />
+      <workItem from="1551700260029" duration="4643000" />
+      <workItem from="1551793420844" duration="10592000" />
+      <workItem from="1551967836935" duration="122000" />
+      <workItem from="1551970090125" duration="3745000" />
+      <workItem from="1552051440716" duration="159000" />
+      <workItem from="1552308404501" duration="12287000" />
+      <workItem from="1552479157648" duration="80000" />
+      <workItem from="1552481973654" duration="7504000" />
+      <workItem from="1552910532243" duration="614000" />
+      <workItem from="1552918726090" duration="5118000" />
+      <workItem from="1552996233287" duration="628000" />
+      <workItem from="1553087204640" duration="5502000" />
+      <workItem from="1553608136830" duration="2357000" />
+      <workItem from="1554128325864" duration="900000" />
+      <workItem from="1554220462782" duration="1271000" />
+      <workItem from="1554726561053" duration="3637000" />
+      <workItem from="1554863913575" duration="16000" />
+      <workItem from="1555139462338" duration="785000" />
+      <workItem from="1555170521183" duration="1953000" />
+      <workItem from="1556022660811" duration="3100000" />
+      <workItem from="1559147150488" duration="1813000" />
+      <workItem from="1561989511218" duration="369000" />
+      <workItem from="1562200814551" duration="1971000" />
+      <workItem from="1562763270008" duration="633000" />
+      <workItem from="1564124097144" duration="6159000" />
+      <workItem from="1564479684364" duration="717000" />
+      <workItem from="1564641564626" duration="607000" />
+      <workItem from="1564642199304" duration="365000" />
     </task>
     <task id="LOCAL-00001" summary="jackson.core 2.9.6">
       <created>1542693076275</created>
@@ -451,88 +594,192 @@
       <option name="project" value="LOCAL" />
       <updated>1547718830477</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="order">
+      <created>1548350018801</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1548350018801</updated>
+    </task>
+    <task id="LOCAL-00006" summary="BeanPostProcessor bean处理器 ==&gt;&gt; 在bean初始化前后可以设置">
+      <created>1548695324468</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1548695324468</updated>
+    </task>
+    <task id="LOCAL-00007" summary="InitializingBean">
+      <created>1549986167329</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1549986167329</updated>
+    </task>
+    <task id="LOCAL-00008" summary="v">
+      <created>1551190040360</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1551190040360</updated>
+    </task>
+    <task id="LOCAL-00009" summary="v">
+      <created>1551316579533</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1551316579533</updated>
+    </task>
+    <task id="LOCAL-00010" summary="v5">
+      <created>1551364059631</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1551364059631</updated>
+    </task>
+    <task id="LOCAL-00011" summary="v6">
+      <created>1551711761455</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1551711761455</updated>
+    </task>
+    <task id="LOCAL-00012" summary="v6">
+      <created>1551711990261</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1551711990261</updated>
+    </task>
+    <task id="LOCAL-00013" summary="v6">
+      <created>1551712776851</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1551712776851</updated>
+    </task>
+    <task id="LOCAL-00014" summary="v7">
+      <created>1551921253733</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1551921253733</updated>
+    </task>
+    <task id="LOCAL-00015" summary="v8">
+      <created>1552313965996</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1552313965996</updated>
+    </task>
+    <task id="LOCAL-00016" summary="v9">
+      <created>1552529576411</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1552529576411</updated>
+    </task>
+    <task id="LOCAL-00017" summary="v10">
+      <created>1552927344477</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1552927344477</updated>
+    </task>
+    <task id="LOCAL-00018" summary="v11 add PageHelper">
+      <created>1554731439631</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1554731439631</updated>
+    </task>
+    <task id="LOCAL-00019" summary="v12 delete web-ssm.iml">
+      <created>1564642450268</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1564642450268</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52981000" />
+    <option name="totallyTimeSpent" value="240025000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3293348" />
-      <window_info anchor="right" id="Maven Projects" order="11" weight="0.16950959" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="right" id="CDI" order="8" />
-      <window_info id="Capture Tool" order="7" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49844238" visible="true" weight="0.21268657" />
+      <window_info id="Structure" order="1" sideWeight="0.50155765" side_tool="true" weight="0.22654584" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Database" order="6" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="JSF" order="5" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info id="UI Designer" order="4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.304253" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.22137405" />
-      <window_info anchor="right" id="Palette&#9;" order="7" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Java Enterprise" order="9" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34351146" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Web" order="6" side_tool="true" />
+      <window_info id="Capture Tool" order="7" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27361563" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" weight="0.3029316" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info id="Web" order="6" side_tool="true" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Java Enterprise" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.2204126" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50053304" side_tool="true" weight="0.30401736" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="CDI" order="8" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="11" visible="true" weight="0.12686567" />
     </layout>
     <layout-to-restore>
-      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.3293348" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49844238" visible="true" weight="0.19083156" />
+      <window_info id="Structure" order="1" sideWeight="0.50155765" side_tool="true" weight="0.22654584" />
       <window_info id="Designer" order="2" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Spring" order="7" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.23118865" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="JSF" order="5" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Favorites" order="5" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info id="Web" order="6" side_tool="true" />
       <window_info id="Capture Tool" order="7" />
-      <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="13" weight="0.22137405" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32899022" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27361563" />
+      <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="5" sideWeight="0.49946696" visible="true" weight="0.3029316" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Spring" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
       <window_info anchor="bottom" id="Java Enterprise" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info active="true" anchor="right" id="Maven Projects" order="11" visible="true" weight="0.10714286" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info anchor="bottom" id="Version Control" order="11" weight="0.32899022" />
+      <window_info anchor="bottom" id="Application Servers" order="12" weight="0.32899022" />
+      <window_info anchor="bottom" id="Messages" order="13" weight="0.2204126" />
+      <window_info anchor="bottom" id="Event Log" order="14" sideWeight="0.50053304" side_tool="true" weight="0.30401736" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="right" id="JSF" order="5" />
       <window_info anchor="right" id="Database" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-      <window_info anchor="right" id="Theme Preview" order="9" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="CDI" order="8" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.3293348" />
-      <window_info anchor="right" id="Bean Validation" order="10" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.2082879" />
+      <window_info anchor="right" id="Theme Preview" order="9" />
+      <window_info anchor="right" id="Bean Validation" order="10" weight="0.32995737" />
+      <window_info anchor="right" id="Maven Projects" order="11" visible="true" weight="0.12100213" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -546,512 +793,460 @@
     <MESSAGE value="delete .idea .setting  target" />
     <MESSAGE value="test" />
     <MESSAGE value="update" />
-    <option name="LAST_COMMIT_MESSAGE" value="update" />
+    <MESSAGE value="order" />
+    <MESSAGE value="commit" />
+    <MESSAGE value="BeanPostProcessor bean处理器 ==&gt;&gt; 在bean初始化前后可以设置" />
+    <MESSAGE value="InitializingBean" />
+    <MESSAGE value="v" />
+    <MESSAGE value="v5" />
+    <MESSAGE value="v6" />
+    <MESSAGE value="v7" />
+    <MESSAGE value="v8" />
+    <MESSAGE value="v9" />
+    <MESSAGE value="v10" />
+    <MESSAGE value="v11 add PageHelper" />
+    <MESSAGE value="v12 delete web-ssm.iml" />
+    <option name="LAST_COMMIT_MESSAGE" value="v12 delete web-ssm.iml" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/pazz/controller/PersonController.java</url>
-          <line>23</line>
+          <url>file://$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java</url>
+          <line>36</line>
           <properties />
+          <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java</url>
-          <line>15</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/pazz/common/ApplicationContextAwareTest.java</url>
+          <line>20</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java</url>
-          <line>84</line>
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/ApplicationContextAwareProcessor.java</url>
+          <line>119</line>
           <properties />
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java</url>
-          <line>143</line>
-          <properties />
-          <option name="timeStamp" value="5" />
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="6" />
     </breakpoint-manager>
+    <watches-manager>
+      <configuration name="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory">
+        <watch expression="invocation.proceed()" language="JAVA" />
+      </configuration>
+    </watches-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="watch">
+      <expression>
+        <expression-string>invocation.proceed()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>this.beanClass</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>mbd.hasBeanClass()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>bean</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE.jar!/org/springframework/http/converter/json/MappingJackson2HttpMessageConverter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageInfo.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="75" selection-start-line="13" selection-start-column="75" selection-end-line="13" selection-end-column="75" />
+        <state relative-caret-position="1017">
+          <caret line="111" lean-forward="true" selection-start-line="111" selection-end-line="111" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE.jar!/org/springframework/web/servlet/mvc/method/annotation/RequestMappingHandlerAdapter.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/Page.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="222" column="62" selection-start-line="222" selection-start-column="42" selection-end-line="222" selection-end-column="62" />
+        <state relative-caret-position="5121">
+          <caret line="346" column="43" selection-start-line="346" selection-start-column="36" selection-end-line="346" selection-end-column="43" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageException.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1458">
-          <caret line="87" column="30" selection-start-line="87" selection-start-column="24" selection-end-line="87" selection-end-column="30" />
+        <state relative-caret-position="221">
+          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar!/org/springframework/beans/factory/config/PropertyPlaceholderConfigurer.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageObjectUtil.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="42" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="42" />
+        <state relative-caret-position="-1445">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        <state relative-caret-position="34">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/support/PropertiesLoaderSupport.class">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageAutoDialect.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
+        <state relative-caret-position="1037">
+          <caret line="70" column="64" lean-forward="true" selection-start-line="70" selection-start-column="64" selection-end-line="70" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/MSUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1020">
+          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/OrderByParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="633">
+          <caret line="50" column="7" lean-forward="true" selection-start-line="50" selection-start-column="7" selection-end-line="50" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/AbstractHelperDialect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="144" column="31" selection-start-line="144" selection-start-column="18" selection-end-line="144" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/Constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/CountSqlParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/Dialect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/ISelect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/MetaObjectUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageParams.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/PageHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="42" column="34" selection-start-line="42" selection-start-column="34" selection-end-line="42" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/helper/AbstractDialect.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.test/MyHandlerInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/mybatis-config.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="33" column="61" selection-start-line="33" selection-start-column="61" selection-end-line="33" selection-end-column="61" />
           <folding>
-            <element signature="e#1415#1416#0" expanded="true" />
-            <element signature="e#1472#1473#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/commons-dbcp/commons-dbcp/1.4/commons-dbcp-1.4-sources.jar!/org/apache/commons/dbcp/BasicDataSource.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE-sources.jar!/org/springframework/transaction/support/ResourceTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="52" column="13" selection-start-line="52" selection-start-column="13" selection-end-line="52" selection-end-column="13" />
+        <state relative-caret-position="357">
+          <caret line="35" column="62" selection-start-line="35" selection-start-column="62" selection-end-line="35" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE-sources.jar!/org/springframework/transaction/PlatformTransactionManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="952">
+          <caret line="70" column="79" selection-start-line="70" selection-start-column="69" selection-end-line="70" selection-end-column="79" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-jdbc/5.1.3.RELEASE/spring-jdbc-5.1.3.RELEASE.jar!/org/springframework/jdbc/datasource/DataSourceTransactionManager.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="166">
-          <caret line="39" column="16" selection-start-line="39" selection-start-column="16" selection-end-line="39" selection-end-column="16" />
+        <state relative-caret-position="102">
+          <caret line="23" column="69" selection-start-line="23" selection-start-column="69" selection-end-line="23" selection-end-column="69" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2-sources.jar!/org/mybatis/spring/mapper/MapperScannerConfigurer.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-tx/5.1.3.RELEASE/spring-tx-5.1.3.RELEASE-sources.jar!/org/springframework/transaction/support/AbstractPlatformTransactionManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="231" column="14" selection-start-line="231" selection-start-column="14" selection-end-line="231" selection-end-column="14" />
+        <state relative-caret-position="1003">
+          <caret line="91" column="40" selection-start-line="91" selection-start-column="40" selection-end-line="91" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/ThreadLocal.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="67" column="73" lean-forward="true" selection-start-line="67" selection-start-column="73" selection-end-line="67" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/common/ApplicationContextAwareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
           <folding>
-            <element signature="e#5861#5862#0" expanded="true" />
-            <element signature="e#5901#5902#0" expanded="true" />
+            <element signature="e#984#985#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/context/ApplicationListener.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar!/org/springframework/beans/factory/InitializingBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar!/org/springframework/beans/factory/FactoryBean.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis/3.4.6/mybatis-3.4.6-sources.jar!/org/apache/ibatis/session/SqlSessionFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="25" column="11" selection-start-line="25" selection-start-column="11" selection-end-line="25" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/mybatis/mybatis-spring/1.2.2/mybatis-spring-1.2.2-sources.jar!/org/mybatis/spring/SqlSessionFactoryBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="87" column="42" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
-          <folding>
-            <element signature="e#7968#7969#0" expanded="true" />
-            <element signature="e#8016#8017#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/ResourceLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/DefaultResourceLoader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="22" column="52" selection-start-line="22" selection-start-column="52" selection-end-line="22" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar!/org/springframework/beans/factory/ListableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/ApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="57" column="72" selection-start-line="57" selection-start-column="72" selection-end-line="57" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/ConfigurableApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="42" column="63" lean-forward="true" selection-start-line="42" selection-start-column="63" selection-end-line="42" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.springframework.context.support.ClassPathXmlApplicationContext">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.springframework.context.support.ClassPathXmlApplicationContext</OriginalElement>
-          <nodes>
-            <node x="" y="">org.springframework.beans.factory.HierarchicalBeanFactory</node>
-            <node x="" y="">org.springframework.core.io.ResourceLoader</node>
-            <node x="" y="">org.springframework.context.support.AbstractXmlApplicationContext</node>
-            <node x="" y="">org.springframework.beans.factory.Aware</node>
-            <node x="" y="">java.lang.AutoCloseable</node>
-            <node x="" y="">org.springframework.context.ApplicationContext</node>
-            <node x="" y="">org.springframework.beans.factory.InitializingBean</node>
-            <node x="" y="">org.springframework.context.support.AbstractRefreshableConfigApplicationContext</node>
-            <node x="" y="">org.springframework.context.Lifecycle</node>
-            <node x="" y="">java.lang.FunctionalInterface</node>
-            <node x="" y="">org.springframework.context.support.AbstractApplicationContext</node>
-            <node x="" y="">org.springframework.core.io.DefaultResourceLoader</node>
-            <node x="" y="">org.springframework.beans.factory.BeanFactory</node>
-            <node x="" y="">java.io.Closeable</node>
-            <node x="" y="">org.springframework.core.env.EnvironmentCapable</node>
-            <node x="" y="">org.springframework.context.ConfigurableApplicationContext</node>
-            <node x="" y="">org.springframework.context.ApplicationEventPublisher</node>
-            <node x="" y="">org.springframework.context.support.ClassPathXmlApplicationContext</node>
-            <node x="" y="">org.springframework.core.io.support.ResourcePatternResolver</node>
-            <node x="" y="">org.springframework.beans.factory.BeanNameAware</node>
-            <node x="" y="">org.springframework.context.support.AbstractRefreshableApplicationContext</node>
-            <node x="" y="">org.springframework.context.MessageSource</node>
-            <node x="" y="">org.springframework.beans.factory.ListableBeanFactory</node>
-          </nodes>
-          <notes />
-          <edges />
-          <settings layout="Hierarchic Group" zoom="0.7999999999999997" x="930.2532794003387" y="1407.6250000000002" />
-          <SelectedNodes />
-          <Categories>
-            <Category>Constructors</Category>
-            <Category>Fields</Category>
-            <Category>Methods</Category>
-          </Categories>
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/env/AbstractEnvironment.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="452">
-          <caret line="337" column="48" lean-forward="true" selection-start-line="337" selection-start-column="48" selection-end-line="337" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/env/PropertyResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="445">
-          <caret line="28" column="11" selection-start-line="28" selection-start-column="11" selection-end-line="28" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/support/PathMatchingResourcePatternResolver.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="57" column="11" selection-start-line="57" selection-start-column="11" selection-end-line="57" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="31" column="11" lean-forward="true" selection-start-line="31" selection-start-column="11" selection-end-line="31" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/org/springframework/context/config/spring-context.xsd">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
-          <caret line="213" column="23" selection-start-line="213" selection-start-column="23" selection-end-line="213" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/META-INF/MANIFEST.MF">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/META-INF/notice.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE.jar!/META-INF/spring.handlers">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="91" selection-start-column="91" selection-end-column="91" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE.jar!/org/springframework/beans/factory/xml/NamespaceHandlerSupport.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/NamespaceHandlerSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="47" column="75" lean-forward="true" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/config/ContextNamespaceHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="30" column="51" selection-start-line="30" selection-start-column="51" selection-end-line="30" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/util/StringUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="250" column="30" selection-start-line="250" selection-start-column="22" selection-end-line="250" selection-end-column="30" />
-          <folding>
-            <element signature="e#1285#1286#0" expanded="true" />
-            <element signature="e#1337#1338#0" expanded="true" />
-            <element signature="e#7456#7457#0" expanded="true" />
-            <element signature="e#7509#7510#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="181" column="11" selection-start-line="181" selection-start-column="11" selection-end-line="181" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/DefaultListableBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="193" column="10" selection-start-line="193" selection-start-column="10" selection-end-line="193" selection-end-column="10" />
-          <folding>
-            <element signature="e#8033#8034#0" expanded="true" />
-            <element signature="e#8064#8065#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/xml/XmlBeanFactory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
-          <caret line="59" column="7" lean-forward="true" selection-start-line="59" selection-start-column="7" selection-end-line="59" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/lang/SuppressWarnings.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="53" column="20" selection-start-line="53" selection-start-column="20" selection-end-line="53" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_31/src.zip!/java/math/BigInteger.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="3242" column="38" selection-start-line="3242" selection-start-column="27" selection-end-line="3242" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/InputStreamSource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="10" column="17" selection-start-line="10" selection-start-column="17" selection-end-line="10" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/Resource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/AbstractResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="20" column="55" selection-start-line="20" selection-start-column="55" selection-end-line="20" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/AbstractFileResolvingResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="193" column="25" selection-start-line="193" selection-start-column="25" selection-end-line="193" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="uml://JAVA/org.springframework.core.io.ClassPathResource">
-      <provider selected="true" editor-type-id="UmlEditorProvider">
-        <state>
-          <ID>JAVA</ID>
-          <OriginalElement>org.springframework.core.io.ClassPathResource</OriginalElement>
-          <nodes>
-            <node x="0.0" y="240.0">org.springframework.core.io.AbstractFileResolvingResource</node>
-            <node x="33.0" y="0.0">org.springframework.core.io.InputStreamSource</node>
-            <node x="34.0" y="320.0">org.springframework.core.io.ClassPathResource</node>
-            <node x="61.5" y="80.0">org.springframework.core.io.Resource</node>
-            <node x="37.5" y="160.0">org.springframework.core.io.AbstractResource</node>
-          </nodes>
-          <notes />
-          <edges>
-            <edge source="org.springframework.core.io.Resource" target="org.springframework.core.io.InputStreamSource">
-              <point x="0.0" y="-15.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="org.springframework.core.io.AbstractFileResolvingResource" target="org.springframework.core.io.AbstractResource">
-              <point x="0.0" y="-15.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="org.springframework.core.io.AbstractResource" target="org.springframework.core.io.Resource">
-              <point x="0.0" y="-15.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-            <edge source="org.springframework.core.io.ClassPathResource" target="org.springframework.core.io.AbstractFileResolvingResource">
-              <point x="0.0" y="-15.0" />
-              <point x="0.0" y="15.0" />
-            </edge>
-          </edges>
-          <settings layout="Hierarchic Group" zoom="1.2183333333333335" x="-184.9982620979342" y="176.99042407660735" />
-          <SelectedNodes>
-            <node>org.springframework.core.io.AbstractFileResolvingResource</node>
-          </SelectedNodes>
-          <Categories />
-          <SCOPE>All</SCOPE>
-          <VISIBILITY>private</VISIBILITY>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.3.RELEASE/spring-core-5.1.3.RELEASE.jar!/org/springframework/core/io/ClassPathResource.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="17" column="24" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="30" />
-          <folding>
-            <element signature="e#714#715#0" expanded="true" />
-            <element signature="e#759#760#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
         </state>
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/AbstractApplicationContext.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="1259" column="26" selection-start-line="1259" selection-start-column="26" selection-end-line="1259" selection-end-column="26" />
+        <state relative-caret-position="358">
+          <caret line="637" column="29" selection-start-line="637" selection-start-column="29" selection-end-line="637" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/config/ConfigurableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="244" column="9" selection-start-line="244" selection-start-column="9" selection-end-line="244" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/config/InstantiationAwareBeanPostProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1244">
+          <caret line="46" column="17" selection-start-line="46" selection-start-column="17" selection-end-line="46" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="868" column="54" selection-start-line="868" selection-start-column="17" selection-end-line="868" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/common/BeanFactoryAwareTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="27" column="64" lean-forward="true" selection-start-line="27" selection-start-column="64" selection-end-line="27" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/ApplicationContextAwareProcessor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="367">
+          <caret line="96" column="9" lean-forward="true" selection-start-line="96" selection-start-column="9" selection-end-line="96" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/5.1.3.RELEASE/spring-beans-5.1.3.RELEASE-sources.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="1723" column="35" selection-start-line="1723" selection-start-column="21" selection-end-line="1723" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/EventListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="31" column="17" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-api/7.0/javaee-api-7.0-sources.jar!/javax/servlet/ServletContextListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="81" column="54" selection-start-line="81" selection-start-column="54" selection-end-line="81" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/javaee_6.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="307">
+          <caret line="96" column="6" selection-start-line="96" selection-start-column="6" selection-end-line="96" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mvc.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="18" lean-forward="true" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/DispatcherServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="355" column="41" selection-start-line="355" selection-start-column="41" selection-end-line="355" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-webmvc/5.1.3.RELEASE/spring-webmvc-5.1.3.RELEASE-sources.jar!/org/springframework/web/servlet/FrameworkServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="282">
+          <caret line="188" column="82" lean-forward="true" selection-start-line="188" selection-start-column="82" selection-end-line="188" selection-end-column="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/context/ContextLoaderListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="108" column="7" lean-forward="true" selection-start-line="108" selection-start-column="7" selection-end-line="108" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.3.RELEASE/spring-web-5.1.3.RELEASE-sources.jar!/org/springframework/web/context/ContextLoader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-466">
+          <caret line="259" column="58" selection-start-line="259" selection-start-column="33" selection-end-line="259" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/standardSchemas/XMLSchema-instance.xsd">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaEE/lib/javaee-impl.jar!/standardSchemas/web-app_3_0.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="35" selection-start-line="4" selection-start-column="35" selection-end-line="4" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$APPLICATION_HOME_DIR$/lib/platform-impl.jar!/standardSchemas/XMLSchema.xsd">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="52" selection-start-line="1" selection-start-column="52" selection-end-line="1" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web-ssm.iml" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/config/TeacherAutoConfiguration.java">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="38" column="77" selection-start-line="38" selection-start-column="56" selection-end-line="38" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="507">
+          <caret line="78" column="50" selection-start-line="78" selection-start-column="50" selection-end-line="78" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/jdbc.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/spring-mybatis.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="50" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="50" />
           <folding>
-            <element signature="e#9733#9734#0" expanded="true" />
-            <element signature="e#9799#9800#0" expanded="true" />
-            <element signature="e#12674#12675#0" expanded="true" />
-            <element signature="e#12713#12714#0" expanded="true" />
+            <element signature="e#916#932#0" expanded="true" />
+            <element signature="e#970#982#0" expanded="true" />
+            <element signature="e#1025#1038#0" expanded="true" />
+            <element signature="e#1081#1094#0" expanded="true" />
+            <element signature="e#1260#1274#0" expanded="true" />
+            <element signature="e#1351#1363#0" expanded="true" />
+            <element signature="e#1440#1452#0" expanded="true" />
+            <element signature="e#1532#1544#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableConfigApplicationContext.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/pazz/entity/Person.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="415">
-          <caret line="83" column="14" lean-forward="true" selection-start-line="83" selection-start-column="14" selection-end-line="83" selection-end-column="14" />
-          <folding>
-            <element signature="e#2107#2108#0" expanded="true" />
-            <element signature="e#2127#2128#0" expanded="true" />
-            <element signature="e#4480#4481#0" expanded="true" />
-            <element signature="e#4544#4545#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/AbstractXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="80" column="26" lean-forward="true" selection-start-line="80" selection-start-column="26" selection-end-line="80" selection-end-column="26" />
-          <folding>
-            <element signature="e#2363#2364#0" expanded="true" />
-            <element signature="e#2383#2384#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/AbstractRefreshableApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="662">
-          <caret line="241" column="28" selection-start-line="241" selection-start-column="28" selection-end-line="241" selection-end-column="28" />
-          <folding>
-            <element signature="e#3877#3878#0" expanded="true" />
-            <element signature="e#3897#3898#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com.test/ApplicationTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="15" column="51" lean-forward="true" selection-start-line="15" selection-start-column="51" selection-end-line="15" selection-end-column="51" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1035#1067#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context/5.1.3.RELEASE/spring-context-5.1.3.RELEASE-sources.jar!/org/springframework/context/support/ClassPathXmlApplicationContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="136" column="11" selection-start-line="136" selection-start-column="11" selection-end-line="136" selection-end-column="11" />
+        <state relative-caret-position="102">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
         </state>
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>web-ssm:war</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Spring</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -1075,6 +1270,18 @@
           </splitter-proportions>
         </settings>
       </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>web-ssm</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -1089,6 +1296,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.alibaba:fastjson:1.1.41</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
