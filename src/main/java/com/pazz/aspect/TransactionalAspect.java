@@ -15,9 +15,10 @@ import org.springframework.stereotype.Component;
 public class TransactionalAspect {
 
     @Around("@annotation(com.pazz.aspect.annotation.LogPrintAnnotation)")
-    public void around(ProceedingJoinPoint joinPoint) throws Throwable {
+    public Object around(ProceedingJoinPoint joinPoint) throws Throwable {
         Object obj = joinPoint.proceed();
         System.out.println("TransactionAspect#around(): ==>>   " + obj);
+        return obj;
     }
 
 }
