@@ -1,6 +1,5 @@
 package com.pazz.service;
 
-import com.pazz.aspect.annotation.LogPrintAnnotation;
 import com.pazz.entity.Person;
 import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
@@ -19,14 +18,13 @@ import java.util.List;
 public class TestService implements IService<Person> {
 
     @Override
-    public List<Person> select(String name, int page) {
-        return Arrays.asList(new Person(1, "pj", 11), new Person(2, "xf", 22));
+    public List<Person> select(String name, int age) {
+        return Arrays.asList(new Person(1, "peng jian", 11), new Person(2, "jia you", 22));
     }
 
     @Override
-    @LogPrintAnnotation
     @Transactional
-    public void update(String name, int pid) {
+    public void update(String name, int id) {
         System.out.println("test updating...");
     }
 

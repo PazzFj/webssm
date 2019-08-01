@@ -18,18 +18,14 @@ public class ApplicationContextAwareTest implements ApplicationContextAware, Ini
 
     public void setApplicationContext(ApplicationContext applicationContext) throws BeansException {
         try {
-            System.out.println("ApplicationContextAware: ==>> " + applicationContext.getId());
+            System.out.println("setApplicationContextAware(): ==>> " + applicationContext.getDisplayName());
         }catch(Exception e){
             e.fillInStackTrace();
         }
     }
 
-    public ApplicationContextAwareTest() {
-        System.out.println("constructor aware application context");
-    }
-
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("after properties set applicaiton context");
+
     }
 }

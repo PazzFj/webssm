@@ -9,7 +9,7 @@ import java.util.List;
 @Repository
 public interface IPersonDao {
 
-    List<Person> getPersons(@Param("name") String name, @Param("page") int page);
+    List<Person> getPersons(@Param("name") String name, @Param("age") int age);
 
     void updatePerson(@Param("name") String name, @Param("id") int id);
 

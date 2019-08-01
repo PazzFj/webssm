@@ -8,29 +8,21 @@ import javax.persistence.Table;
 @Table(name = "person")
 public class Person {
 
-    private int pid;
-    private String pname;
-    private int page;
+    private int id;
+    private String name;
+    private int age;
 
     public Person() {
     }
 
-    public Person(String pname) {
-        this.pname = pname;
+    public Person(String name) {
+        this.name = name;
     }
 
-    public Person(int pid, String pname, int page) {
-        this.pid = pid;
-        this.pname = pname;
-        this.page = page;
+    public Person(int id, String name, int age) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
     }
 
-    @Override
-    public String toString() {
-        return "Person{" +
-                "pid=" + pid +
-                ", pname='" + pname + '\'' +
-                ", page=" + page +
-                '}';
-    }
 }

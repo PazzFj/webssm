@@ -12,15 +12,15 @@ import org.springframework.stereotype.Component;
  * @description: FactoryBean接口可以实现Bean实例化的个性定制，让Spring容器加载我们想要的Bean。
  * 实现了FactoryBean接口的类，可以通过实现getObject方法，实现加载我们想要的Bean
  */
-@Component
-@Scope("singleton")
+//@Component
+//@Scope("singleton")
 public class FactoryBeanTest implements FactoryBean<Person> {
 
     public Person getObject() throws Exception {
         Person person = new Person();
-        person.setPid(1);
-        person.setPname("FactoryBean");
-        person.setPage(22);
+        person.setId(1);
+        person.setName("FactoryBean");
+        person.setAge(22);
         return person;
     }
 

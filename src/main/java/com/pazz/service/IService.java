@@ -9,8 +9,8 @@ import java.util.List;
  */
 public interface IService<T> {
 
-    List<T> select(String name, int page);
+    List<T> select(String name, int age);
 
-    void update(String name, int pid);
+    void update(String name, int id);
 
 }

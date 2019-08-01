@@ -1,6 +1,5 @@
 package com.pazz.common;
 
-import com.pazz.entity.Person;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.BeanFactory;
 import org.springframework.beans.factory.BeanFactoryAware;
@@ -14,23 +13,18 @@ import org.springframework.stereotype.Component;
  * 实现了BeanFactoryAware接口的类，可以在该Bean被加载的过程中获取加载该Bean的BeanFactory，同
  * 时也可以获取这个BeanFactory中加载的其它Bean
  */
-@Component
+//@Component
 public class BeanFactoryAwareTest implements BeanFactoryAware, InitializingBean {
 
     private BeanFactory beanFactory;
 
     public void setBeanFactory(BeanFactory beanFactory) throws BeansException {
-        System.out.println("BeanFactoryAware: ==>> " + beanFactory);
         this.beanFactory = beanFactory;
     }
 
     @Override
     public void afterPropertiesSet() throws Exception {
-        System.out.println("after properties set bean factory");
         System.out.println(beanFactory.getBean(FactoryBeanTest.class).getObject());
     }
 
-    public BeanFactoryAwareTest() {
-        System.out.println("constructor aware bean factory");
-    }
 }

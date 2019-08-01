@@ -49,7 +49,7 @@ public class LogInterceptor {
     @Around("execution(public * com.pazz.service..*.select(..))")
     public Object Around(ProceedingJoinPoint jp) throws Throwable {
         Object result = jp.proceed();
-        log.info("result: ==>> " + result);
+        log.info("LogInterceptor#around(): ==>> " + result);
         return result;
     }
 

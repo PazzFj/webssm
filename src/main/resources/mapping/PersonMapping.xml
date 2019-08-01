@@ -6,9 +6,9 @@
 <mapper namespace="com.pazz.dao.IPersonDao">
 
     <resultMap id="person" type="com.pazz.entity.Person">
-        <id column="pid" property="pid" jdbcType="INTEGER"></id>
-        <result column="pname" property="pname" jdbcType="VARCHAR"></result>
-        <result column="page" property="page" jdbcType="INTEGER"></result>
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="name" property="name" jdbcType="VARCHAR"></result>
+        <result column="age" property="age" jdbcType="INTEGER"></result>
     </resultMap>
 
     <!-- concat('%', #{name}, '%') -->
@@ -17,10 +17,10 @@
         <where>
             <if test="null != name and '' != name">
                 <bind name="name" value="'%' + name + '%'"/>
-                and pname like #{name}
+                and name like #{name}
             </if>
-            <if test="0 != page">
-                and page = #{page}
+            <if test="0 != age">
+                and age = #{age}
             </if>
         </where>
     </select>

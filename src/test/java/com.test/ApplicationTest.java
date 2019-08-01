@@ -29,7 +29,10 @@ public class ApplicationTest {
              WebApplicationContext ac5 = new XmlWebApplicationContext();  //spring web 使用
          */
 
-//        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+        ApplicationContext ac = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
+        System.out.println("----------");
+        Person person = ac.getBean("personId", Person.class);
+        System.out.println(person.getName());
 //        String[] service = ac.getBeanNamesForType(IService.class);
 //        IService service = ac.getBean("personService", IService.class);
 //        System.out.println(Arrays.asList(service));

@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import com.pazz.dao.IPersonDao;
 import com.pazz.entity.Person;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -21,18 +22,20 @@ public class PersonService implements IService<Person> {
 
 	private static final Logger log = LoggerFactory.getLogger(PersonService.class);
 
+	@Autowired
 	private IPersonDao personDao;
 
-	public  List<Person> select(String name, int page){
-		List<Person> persons = personDao.getPersons(name, page);
+	@LogPrintAnnotation
+	public  List<Person> select(String name, int age){
+		List<Person> persons = personDao.getPersons(name, age);
 		return persons;
 	}
 
 	@LogPrintAnnotation
 	@Transactional(propagation=Propagation.REQUIRED)
-	public void update(String name, int pid){
+	public void update(String name, int id){
 		Assert.hasText(name, "name is not null!");
-		personDao.updatePerson(name, pid);
+		personDao.updatePerson(name, id);
 	}
 
 	public void setPersonDao(IPersonDao personDao) {
