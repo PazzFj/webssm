@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
 <body>
-<a href="/web-ssm/person/list.action" style="font-size: 26px;">web-ssh 跳转</a>
+<a href="/person/list.action" style="font-size: 26px;">web-ssh 跳转</a>
 <br>
 <a href="/person/list" style="font-size: 26px;">跳转</a>
 <br>
