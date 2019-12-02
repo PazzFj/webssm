@@ -24,7 +24,7 @@ public class RuntimeServlet extends HttpServlet {
     public void init(ServletConfig config) throws ServletException {
         Enumeration<String> enumeration = config.getInitParameterNames();
         while (enumeration.hasMoreElements()) {
-            System.out.println(enumeration.nextElement());
+            System.out.println("Enumeration -> " + enumeration.nextElement());
         }
         super.init(config);
     }
@@ -39,10 +39,11 @@ public class RuntimeServlet extends HttpServlet {
             throw new ServletException("non-HTTP request or response");
         }
 
+        System.out.println("Servlet ---> interceptor");
         request = (HttpServletRequest) req;
         response = (HttpServletResponse) res;
 
-        service(request, response);
+        super.service(request, response);
     }
 
     @Override

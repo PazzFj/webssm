@@ -1,4 +1,4 @@
-package com.pazz.service;
+package com.pazz.framework;
 
 import java.util.List;
 
@@ -9,8 +9,8 @@ import java.util.List;
  */
 public interface IService<T> {
 
-    List<T> select(String name, int age);
+    List<T> select(T entity);
 
-    void update(String name, int id);
+    void update(T entity);
 
 }

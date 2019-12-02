@@ -9,8 +9,10 @@ import org.aspectj.lang.annotation.Around;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.aspectj.lang.annotation.Pointcut;
+import org.springframework.stereotype.Component;
 
 @Aspect
+@Component
 public class LogInterceptor {
 
     private final Logger log = Logger.getLogger(getClass());
@@ -18,12 +20,12 @@ public class LogInterceptor {
     //切入点
     @Pointcut("execution(public * com.pazz.service..*.select(..)) && args(name, page)")
     public void myMethod(String name, int page){
-
+        System.err.println("myMethod # select");
     }
 
     @Pointcut("execution(public * com.pazz.service.PersonService.update(..)) && args(name, pid)")
     public void myMethod2(String name, int pid){
-
+        System.err.println("myMethod2 # update");
     }
 
     @Before("myMethod2(name, page)")

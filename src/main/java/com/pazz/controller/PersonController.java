@@ -1,33 +1,32 @@
 package com.pazz.controller;
 
-import com.pazz.entity.Person;
-import com.pazz.service.IService;
+import com.pazz.service.IPersonService;
+import com.pazz.vo.PersonVo;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.Resource;
 import java.util.List;
 
 @RestController
 @RequestMapping("/person")
 public class PersonController {
 
-    @Resource(name = "personService")
-    private IService service;
+//    @Resource(name = "personService")
+//    private IPersonService personService;
 
-//    @Autowired
+    @Autowired
 //    @Qualifier("personService")
-//    private IService service;
-
+    private IPersonService personService;
 
     @ResponseBody
     @GetMapping("/list")
-    public List<Person> queryList(Person person) {
-        return service.select(person.getName(), person.getAge());
+    public List<PersonVo> queryList(PersonVo person) {
+        return personService.selectByParam(person);
     }
 
-    @GetMapping("/updatePerson")
+    @GetMapping("/update")
     public String updatePerson(@RequestParam("name") String name, @RequestParam("pid") int pid) {
-        service.update(name, pid);
+        personService.updateByParam(pid, name);
         return "success";
     }
 

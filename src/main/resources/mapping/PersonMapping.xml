@@ -12,7 +12,7 @@
     </resultMap>
 
     <!-- concat('%', #{name}, '%') -->
-    <select id="getPersons" resultType="com.pazz.entity.Person">
+    <select id="selectPersons" resultType="com.pazz.entity.Person">
         select * from person
         <where>
             <if test="null != name and '' != name">

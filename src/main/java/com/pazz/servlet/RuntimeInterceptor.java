@@ -29,26 +29,21 @@ public class RuntimeInterceptor extends HandlerInterceptorAdapter {
     @Override
     public boolean preHandle(HttpServletRequest request, HttpServletResponse response, Object handler) throws Exception {
         if ("GET".equalsIgnoreCase(request.getMethod())) {
-            System.out.println("http method get");
+            System.out.println("get http method handler interceptor");
         }
         String requestUri = request.getRequestURI();
         String contextPath = request.getContextPath();
         String url = requestUri.substring(contextPath.length());
 
-        String userName = request.getParameter("userName");
-        if (userName == null || userName.equals("")) {
-            request.getRequestDispatcher("login.do").include(request, response);
-            response.setCharacterEncoding("UTF-8");
-            response.getWriter().write("error");
-            return false;
-        }
+//        String userName = request.getParameter("userName");
+//        if (userName == null || userName.equals("")) {
+//            request.getRequestDispatcher("login.do").include(request, response);
+//            response.setCharacterEncoding("UTF-8");
+//            response.getWriter().write("error");
+//            return false;
+//        }
         System.out.println("pre handle request:" + request.getRequestURL());
         return super.preHandle(request, response, handler);
     }
 
-    @Override
-    public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler, ModelAndView modelAndView) throws Exception {
-        response.getWriter().write("hello hello hello hello");
-        super.postHandle(request, response, handler, modelAndView);
-    }
 }

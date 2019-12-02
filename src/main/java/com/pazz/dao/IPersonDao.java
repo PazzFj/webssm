@@ -1,16 +1,17 @@
 package com.pazz.dao;
 
 import com.pazz.entity.Person;
+import com.pazz.framework.BaseDao;
 import org.apache.ibatis.annotations.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
-public interface IPersonDao {
+public interface IPersonDao extends BaseDao<Person> {
 
-    List<Person> getPersons(@Param("name") String name, @Param("age") int age);
+    List<Person> selectPersons(@Param("name") String name, @Param("age") int age);
 
-    void updatePerson(@Param("name") String name, @Param("id") int id);
+    void updatePerson(@Param("id") int id, @Param("name") String name);
 
 }

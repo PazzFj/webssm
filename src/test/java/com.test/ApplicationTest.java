@@ -1,18 +1,8 @@
 package com.test;
 
 import com.pazz.entity.Person;
-import com.pazz.service.IService;
-import org.apache.ibatis.io.Resources;
-import org.apache.ibatis.session.SqlSession;
-import org.apache.ibatis.session.SqlSessionFactory;
-import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.io.InputStream;
-import java.util.Arrays;
-import java.util.HashMap;
-import java.util.Map;
 
 public class ApplicationTest {
     public static void main(String[] args) throws Exception {
