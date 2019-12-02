@@ -4,7 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.List;
 
-public abstract class AbstractService<D extends BaseDao<T>, T> implements IService<T> {
+public abstract class AbstractBaseService<D extends BaseDao<T>, T> implements IBaseService<T> {
 
     @Autowired
     protected D dao;

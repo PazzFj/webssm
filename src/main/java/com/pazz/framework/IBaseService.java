@@ -7,7 +7,7 @@ import java.util.List;
  * @create: 2019/1/24 23:59
  * @description:
  */
-public interface IService<T> {
+public interface IBaseService<T> {
 
     List<T> select(T entity);
 

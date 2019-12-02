@@ -23,14 +23,14 @@ public class ApplicationTest {
         System.out.println("----------");
         Person person = ac.getBean("personId", Person.class);
         System.out.println(person.getName());
-//        String[] service = ac.getBeanNamesForType(IService.class);
-//        IService service = ac.getBean("personService", IService.class);
+//        String[] service = ac.getBeanNamesForType(IBaseService.class);
+//        IBaseService service = ac.getBean("personService", IBaseService.class);
 //        System.out.println(Arrays.asList(service));
 
 //        ApplicationContext acac = new AnnotationConfigApplicationContext("com.pazz");
 
 //        ApplicationContext ac1 = new ClassPathXmlApplicationContext(new String[]{"spring-mybatis.xml", "spring-mvc.xml"});
-//        IService personService = ac1.getBean("personService", IService.class);
+//        IBaseService personService = ac1.getBean("personService", IBaseService.class);
 //        System.out.println(personService);
 //        String[] s1 = ac1.getBeanNamesForType(BeanPostProcessor.class);     //根据class获取所有beanName
 //        Map<String, BeanPostProcessor> map = ac1.getBeansOfType(BeanPostProcessor.class);   //根据class获取所有对象
