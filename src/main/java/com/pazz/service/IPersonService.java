@@ -4,7 +4,7 @@ import com.pazz.vo.PersonVo;
 
 import java.util.List;
 
-public interface IPersonService<T> {
+public interface IPersonService {
 
     List<PersonVo> selectByParam(PersonVo param);
 

@@ -1,8 +1,10 @@
 package com.pazz.controller;
 
 import com.pazz.service.IPersonService;
+import com.pazz.service.PersonService;
 import com.pazz.vo.PersonVo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
